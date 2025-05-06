@@ -2,7 +2,7 @@
 hidden: true
 name: header
 */
-meta { name = "Joe's filter"; }
+meta { name = "Onoz Filter"; }
 
 /*@ define:module:default_styling
 ---
@@ -57,7 +57,7 @@ apply (tradeable:false) {
 type: boolean
 label: Show Value for Tradeable Items
 */
-#define VAR_GLOBAL_SHOW_TRADEABLE_VALUE false
+#define VAR_GLOBAL_SHOW_TRADEABLE_VALUE true
 
 apply ((tradeable:true || name:CONST_GLOBAL_TRADEABLE_NON_TRADEABLE_ITEMS) && VAR_GLOBAL_SHOW_TRADEABLE_VALUE) {
     showValue = true;
@@ -352,7 +352,7 @@ group: Tier 3
 exampleItem: Abyssal whip
 exampleItemId: 4151
 */
-#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF9600";menuTextColor = "#FFFF9600";showLootbeam = true;
+#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#00ffffff";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#FFFF9600";menuTextColor = "#FFFF9600";showLootbeam = true;
 
 apply ((value:>=VAR_VALUES_TIER_3_VALUE && value:<VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_3_SHOW) {
     VAR_VALUES_TIER_3_CUSTOMSTYLE 
@@ -379,7 +379,7 @@ group: Tier 4
 exampleItem: Twisted bow
 exampleItemId: 20997
 */
-#define VAR_VALUES_TIER_4_CUSTOMSTYLE textColor = "#FFFF66B2";backgroundColor = "#00000000";borderColor = "#00ff66b3";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";showLootbeam = true;
+#define VAR_VALUES_TIER_4_CUSTOMSTYLE textColor = "#FFFF66B2";backgroundColor = "#00ffffff";borderColor = "#00ff66b3";textAccentColor = "#FF000000";lootbeamColor = "#FFFF66B2";menuTextColor = "#FFFF66B2";showLootbeam = true;
 
 apply (value:>=VAR_VALUES_TIER_4_VALUE || name:VAR_VALUES_TIER_4_SHOW) {
     VAR_VALUES_TIER_4_CUSTOMSTYLE 
@@ -1312,45 +1312,42 @@ type: style
 label: Beginner clue scroll custom style
 exampleItem: Clue scroll (beginner)
 */
-#define VAR_CLUE_SCROLLS_BEGINNER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFCFC8C8";textAccentColor = "#FF000000";menuTextColor = "#FFCFC8C8";
+#define VAR_CLUE_SCROLLS_BEGINNER_CUSTOMSTYLE textColor = "#FFCFC8C8";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFCFC8C8";
 
 /*@ define:input:clue_scrolls
 type: style
 label: Easy clue scroll custom style
 exampleItem: Clue scroll (easy)
 */
-#define VAR_CLUE_SCROLLS_EASY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FF248F26";textAccentColor = "#FF000000";menuTextColor = "#FF248F26";
+#define VAR_CLUE_SCROLLS_EASY_CUSTOMSTYLE textColor = "#FF248F26";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF248F26";
 
 /*@ define:input:clue_scrolls
 type: style
 label: Medium clue scroll custom style
 exampleItem: Clue scroll (medium)
 */
-#define VAR_CLUE_SCROLLS_MEDIUM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FF6CBBBF";textAccentColor = "#FF000000";menuTextColor = "#FF6CBBBF";
+#define VAR_CLUE_SCROLLS_MEDIUM_CUSTOMSTYLE textColor = "#FF6CBBBF";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF6CBBBF";
 
 /*@ define:input:clue_scrolls
 type: style
 label: Hard clue scroll custom style
 exampleItem: Clue scroll (hard)
 */
-#define VAR_CLUE_SCROLLS_HARD_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFA343BD";textAccentColor = "#FF000000";menuTextColor = "#FFA343BD";
+#define VAR_CLUE_SCROLLS_HARD_CUSTOMSTYLE textColor = "#FFA343BD";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFA343BD";
 
 /*@ define:input:clue_scrolls
 type: style
 label: Elite clue scroll custom style
 exampleItem: Clue scroll (elite)
 */
-#define VAR_CLUE_SCROLLS_ELITE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFEED11D";textAccentColor = "#FF000000";menuTextColor = "#FFEED11D";
+#define VAR_CLUE_SCROLLS_ELITE_CUSTOMSTYLE textColor = "#FFEED11D";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFEED11D";
 
 /*@ define:input:clue_scrolls
 type: style
 label: Master clue scroll custom style
 exampleItem: Clue scroll (master)
 */
-#define VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFC33C30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
-
-
-
+#define VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE textColor = "#FFC33C30";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
 
 apply (name:VAR_CLUE_SCROLLS_HIDE) {
     hidden = true;
@@ -1707,7 +1704,7 @@ group: COX potion style
 exampleItem: Elder potion
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_ELDER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50845B5C";borderColor = "#FF845B5C";textAccentColor = "#FF000000";menuTextColor = "#FF845B5C";
+#define VAR_COX_ELDER_CUSTOMSTYLE textColor = "#FF845B5C";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF845B5C";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1716,7 +1713,7 @@ group: COX potion style
 exampleItem: Twisted potion
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_TWISTED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50657E69";borderColor = "#FF657E69";textAccentColor = "#FF000000";menuTextColor = "#FF657E69";
+#define VAR_COX_TWISTED_CUSTOMSTYLE textColor = "#FF657E69";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF657E69";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1725,7 +1722,7 @@ group: COX potion style
 exampleItem: Kodai potion
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_KODAI_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#507288A8";borderColor = "#FF7288A8";textAccentColor = "#FF000000";menuTextColor = "#FF7288A8";
+#define VAR_COX_KODAI_CUSTOMSTYLE textColor = "#FF7288A8";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF7288A8";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1734,7 +1731,7 @@ group: COX potion style
 exampleItem: Revitalisation potion
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_REVITALISATION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50A56785";borderColor = "#FFA56785";textAccentColor = "#FF000000";menuTextColor = "#FFed89b5";
+#define VAR_COX_REVITALISATION_CUSTOMSTYLE textColor = "#FFA56785";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFed89b5";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1743,7 +1740,7 @@ group: COX potion style
 exampleItem: Prayer enhance
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_PRAYER_ENHANCE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#509257BA";borderColor = "#FF9257BA";textAccentColor = "#FF000000";menuTextColor = "#FF9257BA";
+#define VAR_COX_PRAYER_ENHANCE_CUSTOMSTYLE textColor = "#FF9257BA";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF9257BA";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1752,7 +1749,7 @@ group: COX potion style
 exampleItem: Xeric's aid
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_XERICS_AID_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50AFAC73";borderColor = "#FFE7E6D5";textAccentColor = "#FF000000";menuTextColor = "#FFf7f84d";
+#define VAR_COX_XERICS_AID_CUSTOMSTYLE textColor = "#FFE7E6D5";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFf7f84d";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1761,7 +1758,7 @@ group: COX potion style
 exampleItem: Antipoison
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_ANTIPOISON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50A4D27E";borderColor = "#FFA4D27E";textAccentColor = "#FF000000";menuTextColor = "#FFA4D27E";
+#define VAR_COX_ANTIPOISON_CUSTOMSTYLE textColor = "#FFA4D27E";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFA4D27E";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1770,7 +1767,7 @@ group: COX potion style
 exampleItem: Overload
 backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_OVERLOAD_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50130F0F";borderColor = "#FF130F0F";textAccentColor = "#FF000000";menuTextColor = "#FF130F0F";
+#define VAR_COX_OVERLOAD_CUSTOMSTYLE textColor = "#FF130F0F";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF130F0F";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1779,7 +1776,7 @@ group: COX misc style
 exampleItem: Golpar seed
 backgroundImage: Chambers of Xeric
 */
-#define VAR_GOLPAR_SEED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50A6A1DE";borderColor = "#FFA6A1DE";textAccentColor = "#FF000000";menuTextColor = "#FFA6A1DE";
+#define VAR_GOLPAR_SEED_CUSTOMSTYLE textColor = "#FFA6A1DE";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFA6A1DE";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1788,7 +1785,7 @@ group: COX misc style
 exampleItem: Buchu seed
 backgroundImage: Chambers of Xeric
 */
-#define VAR_BUCHU_SEED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50A5423C";borderColor = "#FFA5423C";textAccentColor = "#FF000000";menuTextColor = "#FFA5423C";
+#define VAR_BUCHU_SEED_CUSTOMSTYLE textColor = "#FFA5423C";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFA5423C";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1797,7 +1794,7 @@ group: COX misc style
 exampleItem: Noxifer seed
 backgroundImage: Chambers of Xeric
 */
-#define VAR_NOXIFER_SEED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#503E348F";borderColor = "#FF3E348F";textAccentColor = "#FF000000";menuTextColor = "#FF3E348F";
+#define VAR_NOXIFER_SEED_CUSTOMSTYLE textColor = "#FF3E348F";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF3E348F";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1806,7 +1803,7 @@ group: COX misc style
 exampleItem: Grimy golpar
 backgroundImage: Chambers of Xeric
 */
-#define VAR_GRIMY_GOLPAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50836138";borderColor = "#FF1AE4A6";textAccentColor = "#FF000000";menuTextColor = "#FF1AE4A6";
+#define VAR_GRIMY_GOLPAR_CUSTOMSTYLE textColor = "#FF1AE4A6";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF1AE4A6";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1815,7 +1812,7 @@ group: COX misc style
 exampleItem: Grimy buchu leaf
 backgroundImage: Chambers of Xeric
 */
-#define VAR_GRIMY_BUCHU_LEAF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50856339";borderColor = "#FFD32C19";textAccentColor = "#FF000000";menuTextColor = "#FFD32C19";
+#define VAR_GRIMY_BUCHU_LEAF_CUSTOMSTYLE textColor = "#FFD32C19";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFD32C19";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1824,7 +1821,7 @@ group: COX misc style
 exampleItem: Grimy noxifer
 backgroundImage: Chambers of Xeric
 */
-#define VAR_GRIMY_NOXIFER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50805F38";borderColor = "#FFD3B4FC";textAccentColor = "#FF000000";menuTextColor = "#FFD3B4FC";
+#define VAR_GRIMY_NOXIFER_CUSTOMSTYLE textColor = "#FFD3B4FC";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFD3B4FC";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1833,7 +1830,7 @@ group: COX misc style
 exampleItem: Golpar
 backgroundImage: Chambers of Xeric
 */
-#define VAR_GOLPAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#505D4477";borderColor = "#FF1ADFA2";textAccentColor = "#FF000000";menuTextColor = "#FF1ADFA2";
+#define VAR_GOLPAR_CUSTOMSTYLE textColor = "#FF1ADFA2";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF1ADFA2";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1842,7 +1839,7 @@ group: COX misc style
 exampleItem: Buchu leaf
 backgroundImage: Chambers of Xeric
 */
-#define VAR_BUCHU_LEAF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#505A4173";borderColor = "#FFD12C18";textAccentColor = "#FF000000";menuTextColor = "#FFD12C18";
+#define VAR_BUCHU_LEAF_CUSTOMSTYLE textColor = "#FFD12C18";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFD12C18";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1851,7 +1848,7 @@ group: COX misc style
 exampleItem: Noxifer
 backgroundImage: Chambers of Xeric
 */
-#define VAR_NOXIFER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#505B4275";borderColor = "#FFD3B4FC";textAccentColor = "#FF000000";menuTextColor = "#FFD3B4FC";
+#define VAR_NOXIFER_CUSTOMSTYLE textColor = "#FFD3B4FC";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFD3B4FC";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1860,7 +1857,7 @@ group: COX misc style
 exampleItem: Endarkened juice
 backgroundImage: Chambers of Xeric
 */
-#define VAR_ENDARKENED_JUICE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#507539e0";borderColor = "#FF7539e0";textAccentColor = "#FF000000";menuTextColor = "#FF7539e0";
+#define VAR_ENDARKENED_JUICE_CUSTOMSTYLE textColor = "#FF7539e0";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF7539e0";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1869,7 +1866,7 @@ group: COX misc style
 exampleItem: Stinkhorn mushroom
 backgroundImage: Chambers of Xeric
 */
-#define VAR_STINKHORN_MUSHROOM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#506d3532";borderColor = "#FF6d3532";textAccentColor = "#FF000000";menuTextColor = "#FF6d3532";
+#define VAR_STINKHORN_MUSHROOM_CUSTOMSTYLE textColor = "#FF6d3532";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF6d3532";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1878,7 +1875,7 @@ group: COX misc style
 exampleItem: Cicely
 backgroundImage: Chambers of Xeric
 */
-#define VAR_CICELY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50a48aa8";borderColor = "#FFa48aa8";textAccentColor = "#FF000000";menuTextColor = "#FFa48aa8";
+#define VAR_CICELY_CUSTOMSTYLE textColor = "#FFa48aa8";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFa48aa8";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1887,7 +1884,7 @@ group: COX misc style
 exampleItem: Mallignum root plank
 backgroundImage: Chambers of Xeric
 */
-#define VAR_MALLIGNUM_ROOT_PLANK_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50484320";borderColor = "#FF484320";textAccentColor = "#FF000000";menuTextColor = "#FFb2b099";
+#define VAR_MALLIGNUM_ROOT_PLANK_CUSTOMSTYLE textColor = "#FF484320";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFb2b099";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1896,7 +1893,7 @@ group: COX misc style
 exampleItem: Cavern grubs
 backgroundImage: Chambers of Xeric
 */
-#define VAR_CAVERN_GRUBS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#509f7756";borderColor = "#FF9f7756";textAccentColor = "#FF000000";menuTextColor = "#FFcfbbaa";
+#define VAR_CAVERN_GRUBS_CUSTOMSTYLE textColor = "#FF9f7756";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFcfbbaa";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1905,7 +1902,7 @@ group: COX misc style
 exampleItem: Empty gourd vial
 backgroundImage: Chambers of Xeric
 */
-#define VAR_EMPTY_GOURD_VIAL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50636165";borderColor = "#FFbeb8c2";textAccentColor = "#FF000000";menuTextColor = "#FFbeb8c2";
+#define VAR_EMPTY_GOURD_VIAL_CUSTOMSTYLE textColor = "#FFbeb8c2";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFbeb8c2";
 
 /*@ define:input:chambers_of_xeric
 type: style
@@ -1914,7 +1911,8 @@ group: COX misc style
 exampleItem: Water-filled gourd vial
 backgroundImage: Chambers of Xeric
 */
-#define VAR_WATER_FILLED_GOURD_VIAL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50a7a8c0";borderColor = "#FFb8b2bc";textAccentColor = "#FF000000";menuTextColor = "#FFa7a8c0";
+#define VAR_WATER_FILLED_GOURD_VIAL_CUSTOMSTYLE textColor = "#FFb8b2bc";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFa7a8c0";
+
 
 apply (area:CONST_COX_AREA && name:VAR_COX_FISH_HIDE) {
     hidden = true;
@@ -2047,7 +2045,7 @@ label: Dawnbringer custom style
 exampleItem: Dawnbringer
 backgroundImage: Verzik Vitur
 */
-#define VAR_TOB_DAWNBRINGER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50ad62a7";borderColor = "#FFb8a22e";textAccentColor = "#FF000000";menuTextColor = "#FFad62a7";
+#define VAR_TOB_DAWNBRINGER_CUSTOMSTYLE textColor = "#FFb8a22e";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFad62a7";
 
 /*@ define:input:theatre_of_blood
 type: style
@@ -2055,7 +2053,7 @@ label: Salve custom style
 exampleItem: Salve amulet (e)
 backgroundImage: Verzik Vitur
 */
-#define VAR_TOB_SALVE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50e39cb1";borderColor = "#FFf5f3f3";textAccentColor = "#FF000000";menuTextColor = "#FFe39cb1";
+#define VAR_TOB_SALVE_CUSTOMSTYLE textColor = "#FFf5f3f3";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFe39cb1";
 
 apply (name:"Dawnbringer") {
     VAR_TOB_DAWNBRINGER_CUSTOMSTYLE 
@@ -2245,7 +2243,7 @@ label: Big banana
 group: TOA Item Styles
 backgroundImage: Wardens
 */
-#define VAR_BIG_BANANA_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50cbca49";borderColor = "#FFcbca49";textAccentColor = "#FF000000";menuTextColor = "#FFcbca49";showLootbeam = true;
+#define VAR_BIG_BANANA_CUSTOMSTYLE textColor = "#FFcbca49";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFcbca49";showLootbeam = true;
 
 /*@ define:input:tombs_of_amascut
 type: style
@@ -2253,7 +2251,7 @@ label: Eldritch ashes
 group: TOA Item Styles
 backgroundImage: Wardens
 */
-#define VAR_ELDRITCH_ASHES_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50acb6b7";borderColor = "#FFacb6b7";textAccentColor = "#FF000000";menuTextColor = "#FFacb6b7";showLootbeam = true;
+#define VAR_ELDRITCH_ASHES_CUSTOMSTYLE textColor = "#FFacb6b7";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFacb6b7";showLootbeam = true;
 
 /*@ define:input:tombs_of_amascut
 type: style
@@ -2261,7 +2259,7 @@ label: Fang
 group: TOA Item Styles
 backgroundImage: Wardens
 */
-#define VAR_FANG_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50c6c6be";borderColor = "#FF882a22";textAccentColor = "#FF000000";menuTextColor = "#FFc6c6be";showLootbeam = true;
+#define VAR_FANG_CUSTOMSTYLE textColor = "#FF882a22";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFc6c6be";showLootbeam = true;
 
 /*@ define:input:tombs_of_amascut
 type: style
@@ -2269,7 +2267,7 @@ label: Scarab dung
 group: TOA Item Styles
 backgroundImage: Wardens
 */
-#define VAR_SCARAB_DUNG_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50985d37";borderColor = "#FF985d37";textAccentColor = "#FF000000";menuTextColor = "#FF985d37";showLootbeam = true;
+#define VAR_SCARAB_DUNG_CUSTOMSTYLE textColor = "#FF985d37";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF985d37";showLootbeam = true;
 
 /*@ define:input:tombs_of_amascut
 type: style
@@ -2277,7 +2275,7 @@ label: Neutralising potion
 group: TOA Item Styles
 backgroundImage: Wardens
 */
-#define VAR_NEUTRALISING_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#500d8011";borderColor = "#FF0d8011";textAccentColor = "#FF000000";menuTextColor = "#FF0d8011";
+#define VAR_NEUTRALISING_POTION_CUSTOMSTYLE textColor = "#FF0d8011";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF0d8011";
 
 /*@ define:input:tombs_of_amascut
 type: style
@@ -2285,7 +2283,7 @@ label: Honey locust
 group: TOA Item Styles
 backgroundImage: Wardens
 */
-#define VAR_HONEY_LOCUST_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50d3b91a";borderColor = "#FF9b5826";textAccentColor = "#FF000000";menuTextColor = "#FFd3b91a";
+#define VAR_HONEY_LOCUST_CUSTOMSTYLE textColor = "#FF9b5826";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFd3b91a";
 
 /*@ define:input:tombs_of_amascut
 type: style
@@ -2293,7 +2291,7 @@ label: Ambrosia
 group: TOA Item Styles
 backgroundImage: Wardens
 */
-#define VAR_AMBROSIA_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50fcfdfc";borderColor = "#FFfcfdfc";textAccentColor = "#FF000000";menuTextColor = "#FFfcfdfc";
+#define VAR_AMBROSIA_CUSTOMSTYLE textColor = "#FFfcfdfc";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFfcfdfc";
 
 /*@ define:input:tombs_of_amascut
 type: style
@@ -2301,7 +2299,7 @@ label: Blessed crystal scarab
 group: TOA Item Styles
 backgroundImage: Wardens
 */
-#define VAR_BLESSED_CRYSTAL_SCARAB_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50c8c1c1";borderColor = "#FFc8c1c1";textAccentColor = "#FF000000";menuTextColor = "#FFc8c1c1";
+#define VAR_BLESSED_CRYSTAL_SCARAB_CUSTOMSTYLE textColor = "#FFc8c1c1";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFc8c1c1";
 
 /*@ define:input:tombs_of_amascut
 type: style
@@ -2309,7 +2307,7 @@ label: Liquid adrenaline
 group: TOA Item Styles
 backgroundImage: Wardens
 */
-#define VAR_LIQUID_ADRENALINE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5035c6d7";borderColor = "#FF35c6d7";textAccentColor = "#FF000000";menuTextColor = "#FF35c6d7";
+#define VAR_LIQUID_ADRENALINE_CUSTOMSTYLE textColor = "#FF35c6d7";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF35c6d7";
 
 /*@ define:input:tombs_of_amascut
 type: style
@@ -2317,7 +2315,7 @@ label: Nectar
 group: TOA Item Styles
 backgroundImage: Wardens
 */
-#define VAR_NECTAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50ad8f2a";borderColor = "#FFad8f2a";textAccentColor = "#FF000000";menuTextColor = "#FFad8f2a";
+#define VAR_NECTAR_CUSTOMSTYLE textColor = "#FFad8f2a";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFad8f2a";
 
 /*@ define:input:tombs_of_amascut
 type: style
@@ -2325,7 +2323,7 @@ label: Silk dressing
 group: TOA Item Styles
 backgroundImage: Wardens
 */
-#define VAR_SILK_DRESSING_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50ab9f9f";borderColor = "#FFab9f9f";textAccentColor = "#FF000000";menuTextColor = "#FFab9f9f";
+#define VAR_SILK_DRESSING_CUSTOMSTYLE textColor = "#FFab9f9f";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFab9f9f";
 
 /*@ define:input:tombs_of_amascut
 type: style
@@ -2333,7 +2331,7 @@ label: Smelling salts
 group: TOA Item Styles
 backgroundImage: Wardens
 */
-#define VAR_SMELLING_SALTS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50e7cb1d";borderColor = "#FFe7cb1d";textAccentColor = "#FF000000";menuTextColor = "#FFe7cb1d";
+#define VAR_SMELLING_SALTS_CUSTOMSTYLE textColor = "#FFe7cb1d";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFe7cb1d";
 
 /*@ define:input:tombs_of_amascut
 type: style
@@ -2341,7 +2339,8 @@ label: Tears of Elidinis
 group: TOA Item Styles
 backgroundImage: Wardens
 */
-#define VAR_TEARS_OF_ELIDINIS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50e285b9";borderColor = "#FFe285b9";textAccentColor = "#FF000000";menuTextColor = "#FFe285b9";
+#define VAR_TEARS_OF_ELIDINIS_CUSTOMSTYLE textColor = "#FFe285b9";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFe285b9";
+
 
 apply (area:CONST_TOA_AREA && name:VAR_TOA_SUPPLIES_HIDE) {
     hidden = true;
@@ -3173,7 +3172,7 @@ label: Larran's key
 group: Slayer Keys
 exampleItem: Larran's key
 */
-#define VAR_SLAYER_LARRANS_KEY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50ae9815";borderColor = "#FFFFFFFF";textAccentColor = "#FF000000";menuTextColor = "#FFfada1e";showLootbeam = true;
+#define VAR_SLAYER_LARRANS_KEY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFfada1e";showLootbeam = true;
 
 /*@ define:input:slayer
 type: style
@@ -3181,7 +3180,7 @@ label: Brimstone key
 group: Slayer Keys
 exampleItem: Brimstone key
 */
-#define VAR_SLAYER_BRIMSTONE_KEY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5026636b";borderColor = "#FFFFFFFF";textAccentColor = "#FF000000";menuTextColor = "#FF41a9b7";showLootbeam = true;
+#define VAR_SLAYER_BRIMSTONE_KEY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF41a9b7";showLootbeam = true;
 
 apply (name:"Larran's key") {
     VAR_SLAYER_LARRANS_KEY_CUSTOMSTYLE 
@@ -3196,7 +3195,7 @@ label: Dust battlestaff
 group: Superior Uniques
 exampleItem: Dust battlestaff
 */
-#define VAR_SLAYER_DUST_BATTLESTAFF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5071603f";borderColor = "#FFFFFFFF";textAccentColor = "#FF000000";menuTextColor = "#FFbda069";showLootbeam = true;
+#define VAR_SLAYER_DUST_BATTLESTAFF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFbda069";showLootbeam = true;
 
 /*@ define:input:slayer
 type: style
@@ -3204,7 +3203,7 @@ label: Mist battlestaff
 group: Superior Uniques
 exampleItem: Mist battlestaff
 */
-#define VAR_SLAYER_MIST_BATTLESTAFF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50847a83";borderColor = "#FFFFFFFF";textAccentColor = "#FF000000";menuTextColor = "#FFd0c0ce";showLootbeam = true;
+#define VAR_SLAYER_MIST_BATTLESTAFF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFd0c0ce";showLootbeam = true;
 
 /*@ define:input:slayer
 type: style
@@ -3212,7 +3211,7 @@ label: Eternal gem
 group: Superior Uniques
 exampleItem: Eternal gem
 */
-#define VAR_SLAYER_ETERNAL_GEM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5036aebc";borderColor = "#FF9fc34a";textAccentColor = "#FF000000";menuTextColor = "#FF36aebc";showLootbeam = true;
+#define VAR_SLAYER_ETERNAL_GEM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF36aebc";showLootbeam = true;
 
 /*@ define:input:slayer
 type: style
@@ -3220,7 +3219,8 @@ label: Imbued heart
 group: Superior Uniques
 exampleItem: Imbued heart
 */
-#define VAR_SLAYER_IMBUED_HEART_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5061374a";borderColor = "#FF432e43";textAccentColor = "#FF000000";menuTextColor = "#FFad6284";showLootbeam = true;
+#define VAR_SLAYER_IMBUED_HEART_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFad6284";showLootbeam = true;
+
 
 apply (name:"Dust battlestaff") {
     VAR_SLAYER_DUST_BATTLESTAFF_CUSTOMSTYLE 
@@ -3570,7 +3570,7 @@ label: Smouldering gland
 group: Tormented Demons
 exampleItem: Smouldering gland
 */
-#define VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_GLAND_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5059D4A8";borderColor = "#FF59D4A8";textAccentColor = "#FF000000";menuTextColor = "#FF59D4A8";
+#define VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_GLAND_CUSTOMSTYLE textColor = "#FF59D4A8";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF59D4A8";
 
 apply (name:"Smouldering gland") {
     VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_GLAND_CUSTOMSTYLE
@@ -3582,7 +3582,7 @@ label: Smouldering heart
 group: Tormented Demons
 exampleItem: Smouldering heart
 */
-#define VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_HEART_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5019640B";borderColor = "#FF19640B";textAccentColor = "#FF000000";menuTextColor = "#FF19640B";
+#define VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_HEART_CUSTOMSTYLE textColor = "#FF19640B";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF19640B";
 
 apply (name:"Smouldering heart") {
     VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_HEART_CUSTOMSTYLE
@@ -3594,7 +3594,7 @@ label: Smouldering pile of flesh
 group: Tormented Demons
 exampleItem: Smouldering pile of flesh
 */
-#define VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_PILE_OF_FLESH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50624b18";borderColor = "#FF624b18";textAccentColor = "#FF000000";menuTextColor = "#FFffd480";
+#define VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_PILE_OF_FLESH_CUSTOMSTYLE textColor = "#FF624b18";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFffd480";
 
 apply (name:"Smouldering pile of flesh") {
     VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_PILE_OF_FLESH_CUSTOMSTYLE
@@ -4465,7 +4465,7 @@ label: Air rune custom style
 group: Custom Styling
 exampleItem: Air rune
 */
-#define VAR_AIR_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50E1DEDE";borderColor = "#FFE1DEDE";textAccentColor = "#FF000000";menuTextColor = "#FFE1DEDE";
+#define VAR_AIR_RUNE_CUSTOMSTYLE textColor = "#FFE1DEDE";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFE1DEDE";
 
 /*@ define:input:runes
 type: style
@@ -4473,7 +4473,7 @@ label: Mind rune custom style
 group: Custom Styling
 exampleItem: Mind rune
 */
-#define VAR_MIND_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50D58A2E";borderColor = "#FFD58A2E";textAccentColor = "#FF000000";menuTextColor = "#FFD58A2E";
+#define VAR_MIND_RUNE_CUSTOMSTYLE textColor = "#FFD58A2E";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFD58A2E";
 
 /*@ define:input:runes
 type: style
@@ -4481,7 +4481,7 @@ label: Water rune custom style
 group: Custom Styling
 exampleItem: Water rune
 */
-#define VAR_WATER_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50151AA7";borderColor = "#FF151AA7";textAccentColor = "#FF000000";menuTextColor = "#FF151AA7";
+#define VAR_WATER_RUNE_CUSTOMSTYLE textColor = "#FF151AA7";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF151AA7";
 
 /*@ define:input:runes
 type: style
@@ -4489,7 +4489,7 @@ label: Earth rune custom style
 group: Custom Styling
 exampleItem: Earth rune
 */
-#define VAR_EARTH_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#506D490D";borderColor = "#FF6D490D";textAccentColor = "#FF000000";menuTextColor = "#FF6D490D";
+#define VAR_EARTH_RUNE_CUSTOMSTYLE textColor = "#FF6D490D";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF6D490D";
 
 /*@ define:input:runes
 type: style
@@ -4497,7 +4497,7 @@ label: Fire rune custom style
 group: Custom Styling
 exampleItem: Fire rune
 */
-#define VAR_FIRE_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50A72215";borderColor = "#FFA72215";textAccentColor = "#FF000000";menuTextColor = "#FFA72215";
+#define VAR_FIRE_RUNE_CUSTOMSTYLE textColor = "#FFA72215";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFA72215";
 
 /*@ define:input:runes
 type: style
@@ -4505,7 +4505,7 @@ label: Body rune custom style
 group: Custom Styling
 exampleItem: Body rune
 */
-#define VAR_BODY_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#501A21CF";borderColor = "#FF1A21CF";textAccentColor = "#FF000000";menuTextColor = "#FF1A21CF";
+#define VAR_BODY_RUNE_CUSTOMSTYLE textColor = "#FF1A21CF";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF1A21CF";
 
 /*@ define:input:runes
 type: style
@@ -4513,7 +4513,7 @@ label: Cosmic rune custom style
 group: Custom Styling
 exampleItem: Cosmic rune
 */
-#define VAR_COSMIC_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50E0DE1A";borderColor = "#FFE0DE1A";textAccentColor = "#FF000000";menuTextColor = "#FFE0DE1A";
+#define VAR_COSMIC_RUNE_CUSTOMSTYLE textColor = "#FFE0DE1A";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFE0DE1A";
 
 /*@ define:input:runes
 type: style
@@ -4521,7 +4521,7 @@ label: Chaos rune custom style
 group: Custom Styling
 exampleItem: Chaos rune
 */
-#define VAR_CHAOS_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50E0A81A";borderColor = "#FFE0A81A";textAccentColor = "#FF000000";menuTextColor = "#FFE0A81A";
+#define VAR_CHAOS_RUNE_CUSTOMSTYLE textColor = "#FFE0A81A";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFE0A81A";
 
 /*@ define:input:runes
 type: style
@@ -4529,7 +4529,7 @@ label: Nature rune custom style
 group: Custom Styling
 exampleItem: Nature rune
 */
-#define VAR_NATURE_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50168B1A";borderColor = "#FF168B1A";textAccentColor = "#FF000000";menuTextColor = "#FF168B1A";
+#define VAR_NATURE_RUNE_CUSTOMSTYLE textColor = "#FF168B1A";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF168B1A";
 
 /*@ define:input:runes
 type: style
@@ -4537,7 +4537,7 @@ label: Law rune custom style
 group: Custom Styling
 exampleItem: Law rune
 */
-#define VAR_LAW_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#501A22E0";borderColor = "#FF1A22E0";textAccentColor = "#FF000000";menuTextColor = "#FF1A22E0";
+#define VAR_LAW_RUNE_CUSTOMSTYLE textColor = "#FF1A22E0";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF1A22E0";
 
 /*@ define:input:runes
 type: style
@@ -4545,7 +4545,7 @@ label: Death rune custom style
 group: Custom Styling
 exampleItem: Death rune
 */
-#define VAR_DEATH_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50E4E1E1";borderColor = "#FFE4E1E1";textAccentColor = "#FF000000";menuTextColor = "#FFE4E1E1";
+#define VAR_DEATH_RUNE_CUSTOMSTYLE textColor = "#FFE4E1E1";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFE4E1E1";
 
 /*@ define:input:runes
 type: style
@@ -4553,7 +4553,7 @@ label: Sunfire rune custom style
 group: Custom Styling
 exampleItem: Sunfire rune
 */
-#define VAR_SUNFIRE_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50DFA81A";borderColor = "#FFDFA81A";textAccentColor = "#FF000000";menuTextColor = "#FFDFA81A";
+#define VAR_SUNFIRE_RUNE_CUSTOMSTYLE textColor = "#FFDFA81A";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFDFA81A";
 
 /*@ define:input:runes
 type: style
@@ -4561,7 +4561,7 @@ label: Astral rune custom style
 group: Custom Styling
 exampleItem: Astral rune
 */
-#define VAR_ASTRAL_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50CDB5CD";borderColor = "#FFCDB5CD";textAccentColor = "#FF000000";menuTextColor = "#FFCDB5CD";
+#define VAR_ASTRAL_RUNE_CUSTOMSTYLE textColor = "#FFCDB5CD";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFCDB5CD";
 
 /*@ define:input:runes
 type: style
@@ -4569,7 +4569,7 @@ label: Blood rune custom style
 group: Custom Styling
 exampleItem: Blood rune
 */
-#define VAR_BLOOD_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50891D11";borderColor = "#FF891D11";textAccentColor = "#FF000000";menuTextColor = "#FF891D11";
+#define VAR_BLOOD_RUNE_CUSTOMSTYLE textColor = "#FF891D11";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF891D11";
 
 /*@ define:input:runes
 type: style
@@ -4577,7 +4577,7 @@ label: Soul rune custom style
 group: Custom Styling
 exampleItem: Soul rune
 */
-#define VAR_SOUL_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#509192D3";borderColor = "#FF9192D3";textAccentColor = "#FF000000";menuTextColor = "#FF9192D3";
+#define VAR_SOUL_RUNE_CUSTOMSTYLE textColor = "#FF9192D3";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF9192D3";
 
 /*@ define:input:runes
 type: style
@@ -4585,7 +4585,7 @@ label: Wrath rune custom style
 group: Custom Styling
 exampleItem: Wrath rune
 */
-#define VAR_WRATH_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50353030";borderColor = "#FF353030";textAccentColor = "#FF000000";menuTextColor = "#FF353030";
+#define VAR_WRATH_RUNE_CUSTOMSTYLE textColor = "#FF353030";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF353030";
 
 /*@ define:input:runes
 type: style
@@ -4593,7 +4593,7 @@ label: Mist rune custom style
 group: Custom Styling
 exampleItem: Mist rune
 */
-#define VAR_MIST_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50C8C0C0";borderColor = "#FFC8C0C0";textAccentColor = "#FF000000";menuTextColor = "#FFC8C0C0";
+#define VAR_MIST_RUNE_CUSTOMSTYLE textColor = "#FFC8C0C0";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFC8C0C0";
 
 /*@ define:input:runes
 type: style
@@ -4601,7 +4601,7 @@ label: Dust rune custom style
 group: Custom Styling
 exampleItem: Dust rune
 */
-#define VAR_DUST_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50746241";borderColor = "#FF746241";textAccentColor = "#FF000000";menuTextColor = "#FF746241";
+#define VAR_DUST_RUNE_CUSTOMSTYLE textColor = "#FF746241";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF746241";
 
 /*@ define:input:runes
 type: style
@@ -4609,7 +4609,7 @@ label: Mud rune custom style
 group: Custom Styling
 exampleItem: Mud rune
 */
-#define VAR_MUD_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#505D3B17";borderColor = "#FF5D3B17";textAccentColor = "#FF000000";menuTextColor = "#FF5D3B17";
+#define VAR_MUD_RUNE_CUSTOMSTYLE textColor = "#FF5D3B17";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF5D3B17";
 
 /*@ define:input:runes
 type: style
@@ -4617,7 +4617,7 @@ label: Smoke rune custom style
 group: Custom Styling
 exampleItem: Smoke rune
 */
-#define VAR_SMOKE_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50534D4D";borderColor = "#FF534D4D";textAccentColor = "#FF000000";menuTextColor = "#FF534D4D";
+#define VAR_SMOKE_RUNE_CUSTOMSTYLE textColor = "#FF534D4D";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF534D4D";
 
 /*@ define:input:runes
 type: style
@@ -4625,7 +4625,7 @@ label: Steam rune custom style
 group: Custom Styling
 exampleItem: Steam rune
 */
-#define VAR_STEAM_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50AEAEB7";borderColor = "#FFAEAEB7";textAccentColor = "#FF000000";menuTextColor = "#FFAEAEB7";
+#define VAR_STEAM_RUNE_CUSTOMSTYLE textColor = "#FFAEAEB7";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFAEAEB7";
 
 /*@ define:input:runes
 type: style
@@ -4633,7 +4633,8 @@ label: Lava rune custom style
 group: Custom Styling
 exampleItem: Lava rune
 */
-#define VAR_LAVA_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50D28019";borderColor = "#FFD28019";textAccentColor = "#FF000000";menuTextColor = "#FFD28019";
+#define VAR_LAVA_RUNE_CUSTOMSTYLE textColor = "#FFD28019";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFD28019";
+
 
 apply (name:VAR_RUNES_HIDE) {
     hidden = true;
@@ -4893,14 +4894,13 @@ enum: [
 */
 #define VAR_LOGS_HIDE []
 
-
 /*@ define:input:logs
 type: style
 label: Logs custom style
 group: Custom Styling
 exampleItem: Logs
 */
-#define VAR_LOGS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50AF8F51";borderColor = "#FF7F623A";textAccentColor = "#FF000000";menuTextColor = "#FF7F623A";
+#define VAR_LOGS_CUSTOMSTYLE textColor = "#FF7F623A";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF7F623A";
 
 /*@ define:input:logs
 type: style
@@ -4908,7 +4908,7 @@ label: Oak logs custom style
 group: Custom Styling
 exampleItem: Oak logs
 */
-#define VAR_OAK_LOGS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50A7875E";borderColor = "#FF8B6B40";textAccentColor = "#FF000000";menuTextColor = "#FF8B6B40";
+#define VAR_OAK_LOGS_CUSTOMSTYLE textColor = "#FF8B6B40";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF8B6B40";
 
 /*@ define:input:logs
 type: style
@@ -4916,7 +4916,7 @@ label: Willow logs custom style
 group: Custom Styling
 exampleItem: Willow logs
 */
-#define VAR_WILLOW_LOGS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5071673F";borderColor = "#FF564D20";textAccentColor = "#FF000000";menuTextColor = "#FF564D20";
+#define VAR_WILLOW_LOGS_CUSTOMSTYLE textColor = "#FF564D20";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF564D20";
 
 /*@ define:input:logs
 type: style
@@ -4924,7 +4924,7 @@ label: Maple logs custom style
 group: Custom Styling
 exampleItem: Maple logs
 */
-#define VAR_MAPLE_LOGS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50846230";borderColor = "#FF704C0D";textAccentColor = "#FF000000";menuTextColor = "#FF704C0D";
+#define VAR_MAPLE_LOGS_CUSTOMSTYLE textColor = "#FF704C0D";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF704C0D";
 
 /*@ define:input:logs
 type: style
@@ -4932,7 +4932,7 @@ label: Yew logs custom style
 group: Custom Styling
 exampleItem: Yew logs
 */
-#define VAR_YEW_LOGS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50856D3D";borderColor = "#FF5C4409";textAccentColor = "#FF000000";menuTextColor = "#FF5C4409";
+#define VAR_YEW_LOGS_CUSTOMSTYLE textColor = "#FF5C4409";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF5C4409";
 
 /*@ define:input:logs
 type: style
@@ -4940,7 +4940,7 @@ label: Magic logs custom style
 group: Custom Styling
 exampleItem: Magic logs
 */
-#define VAR_MAGIC_LOGS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#502AA79A";borderColor = "#FF8F8560";textAccentColor = "#FF000000";menuTextColor = "#FF8F8560";
+#define VAR_MAGIC_LOGS_CUSTOMSTYLE textColor = "#FF8F8560";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF8F8560";
 
 /*@ define:input:logs
 type: style
@@ -4948,7 +4948,7 @@ label: Redwood logs custom style
 group: Custom Styling
 exampleItem: Redwood logs
 */
-#define VAR_REDWOOD_LOGS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50B87242";borderColor = "#FF73460D";textAccentColor = "#FF000000";menuTextColor = "#FF73460D";
+#define VAR_REDWOOD_LOGS_CUSTOMSTYLE textColor = "#FF73460D";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF73460D";
 
 /*@ define:input:logs
 type: style
@@ -4956,7 +4956,7 @@ label: Teak logs custom style
 group: Custom Styling
 exampleItem: Teak logs
 */
-#define VAR_TEAK_LOGS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50937243";borderColor = "#FFBFA26C";textAccentColor = "#FF000000";menuTextColor = "#FFBFA26C";
+#define VAR_TEAK_LOGS_CUSTOMSTYLE textColor = "#FFBFA26C";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFBFA26C";
 
 /*@ define:input:logs
 type: style
@@ -4964,7 +4964,7 @@ label: Mahogany logs custom style
 group: Custom Styling
 exampleItem: Mahogany logs
 */
-#define VAR_MAHOGANY_LOGS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50693F09";borderColor = "#FFBEA16C";textAccentColor = "#FF000000";menuTextColor = "#FFBEA16C";
+#define VAR_MAHOGANY_LOGS_CUSTOMSTYLE textColor = "#FFBEA16C";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFBEA16C";
 
 /*@ define:input:logs
 type: style
@@ -4972,7 +4972,7 @@ label: Achey tree logs custom style
 group: Custom Styling
 exampleItem: Achey tree logs
 */
-#define VAR_ACHEY_TREE_LOGS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#508C805E";borderColor = "#FF746642";textAccentColor = "#FF000000";menuTextColor = "#FF746642";
+#define VAR_ACHEY_TREE_LOGS_CUSTOMSTYLE textColor = "#FF746642";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF746642";
 
 /*@ define:input:logs
 type: style
@@ -4980,7 +4980,7 @@ label: Arctic pine logs custom style
 group: Custom Styling
 exampleItem: Arctic pine logs
 */
-#define VAR_ARCTIC_PINE_LOGS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50CBAC73";borderColor = "#FFAB8C4E";textAccentColor = "#FF000000";menuTextColor = "#FFAB8C4E";
+#define VAR_ARCTIC_PINE_LOGS_CUSTOMSTYLE textColor = "#FFAB8C4E";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFAB8C4E";
 
 /*@ define:input:logs
 type: style
@@ -4988,7 +4988,7 @@ label: Scrapey tree logs custom style
 group: Custom Styling
 exampleItem: Scrapey tree logs
 */
-#define VAR_SCRAPEY_TREE_LOGS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#503F6409";borderColor = "#FF7F683A";textAccentColor = "#FF000000";menuTextColor = "#FF7F683A";
+#define VAR_SCRAPEY_TREE_LOGS_CUSTOMSTYLE textColor = "#FF7F683A";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF7F683A";
 
 /*@ define:input:logs
 type: style
@@ -4996,7 +4996,7 @@ label: Juniper logs custom style
 group: Custom Styling
 exampleItem: Juniper logs
 */
-#define VAR_JUNIPER_LOGS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50A28F6E";borderColor = "#FF988667";textAccentColor = "#FF000000";menuTextColor = "#FF988667";
+#define VAR_JUNIPER_LOGS_CUSTOMSTYLE textColor = "#FF988667";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF988667";
 
 /*@ define:input:logs
 type: style
@@ -5004,7 +5004,7 @@ label: Bark custom style
 group: Custom Styling
 exampleItem: Bark
 */
-#define VAR_BARK_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5087734B";borderColor = "#FF483A20";textAccentColor = "#FF000000";menuTextColor = "#FF483A20";
+#define VAR_BARK_CUSTOMSTYLE textColor = "#FF483A20";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF483A20";
 
 /*@ define:input:logs
 type: style
@@ -5012,7 +5012,8 @@ label: Blisterwood logs custom style
 group: Custom Styling
 exampleItem: Blisterwood logs
 */
-#define VAR_BLISTERWOOD_LOGS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50923A34";borderColor = "#FFDFDBDB";textAccentColor = "#FF000000";menuTextColor = "#FFDFDBDB";
+#define VAR_BLISTERWOOD_LOGS_CUSTOMSTYLE textColor = "#FFDFDBDB";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFDFDBDB";
+
 
 
 /*@ define:input:logs
@@ -6159,7 +6160,13 @@ label: Copper ore custom style
 group: Custom Styling
 exampleItem: Copper ore
 */
-#define VAR_COPPER_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50DA7D37";borderColor = "#FFDA7D37";textAccentColor = "#FF000000";menuTextColor = "#FFDA7D37";
+/*@ define:input:ores
+type: style
+label: Copper ore custom style
+group: Custom Styling
+exampleItem: Copper ore
+*/
+#define VAR_COPPER_ORE_CUSTOMSTYLE textColor = "#FFDA7D37";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFDA7D37";
 
 apply (name:"copper ore") {
     VAR_COPPER_ORE_CUSTOMSTYLE 
@@ -6171,7 +6178,7 @@ label: Tin ore custom style
 group: Custom Styling
 exampleItem: Tin ore
 */
-#define VAR_TIN_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50887F7E";borderColor = "#FF887F7E";textAccentColor = "#FF000000";menuTextColor = "#FF887F7E";
+#define VAR_TIN_ORE_CUSTOMSTYLE textColor = "#FF887F7E";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF887F7E";
 
 apply (name:"tin ore") {
     VAR_TIN_ORE_CUSTOMSTYLE 
@@ -6183,7 +6190,7 @@ label: Iron ore custom style
 group: Custom Styling
 exampleItem: Iron ore
 */
-#define VAR_IRON_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504C2D22";borderColor = "#FF4C2D22";textAccentColor = "#FF000000";menuTextColor = "#FF4C2D22";
+#define VAR_IRON_ORE_CUSTOMSTYLE textColor = "#FF4C2D22";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF4C2D22";
 
 apply (name:"iron ore") {
     VAR_IRON_ORE_CUSTOMSTYLE 
@@ -6195,7 +6202,7 @@ label: Silver ore custom style
 group: Custom Styling
 exampleItem: Silver ore
 */
-#define VAR_SILVER_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#509999A5";borderColor = "#FF9999A5";textAccentColor = "#FF000000";menuTextColor = "#FF9999A5";
+#define VAR_SILVER_ORE_CUSTOMSTYLE textColor = "#FF9999A5";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF9999A5";
 
 apply (name:"silver ore") {
     VAR_SILVER_ORE_CUSTOMSTYLE 
@@ -6207,7 +6214,7 @@ label: Coal custom style
 group: Custom Styling
 exampleItem: Coal
 */
-#define VAR_COAL_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50383725";borderColor = "#FF383725";textAccentColor = "#FF000000";menuTextColor = "#FF383725";
+#define VAR_COAL_ORE_CUSTOMSTYLE textColor = "#FF383725";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF383725";
 
 apply (name:"coal") {
     VAR_COAL_ORE_CUSTOMSTYLE 
@@ -6219,7 +6226,7 @@ label: Gold ore custom style
 group: Custom Styling
 exampleItem: Gold ore
 */
-#define VAR_GOLD_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50C6A118";borderColor = "#FFC6A118";textAccentColor = "#FF000000";menuTextColor = "#FFC6A118";
+#define VAR_GOLD_ORE_CUSTOMSTYLE textColor = "#FFC6A118";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFC6A118";
 
 apply (name:"gold ore") {
     VAR_GOLD_ORE_CUSTOMSTYLE 
@@ -6231,7 +6238,7 @@ label: Mithril ore custom style
 group: Custom Styling
 exampleItem: Mithril ore
 */
-#define VAR_MITHRIL_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5048486A";borderColor = "#FF48486A";textAccentColor = "#FF000000";menuTextColor = "#FF48486A";
+#define VAR_MITHRIL_ORE_CUSTOMSTYLE textColor = "#FF48486A";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF48486A";
 
 apply (name:"mithril ore") {
     VAR_MITHRIL_ORE_CUSTOMSTYLE 
@@ -6243,7 +6250,7 @@ label: Adamantite ore custom style
 group: Custom Styling
 exampleItem: Adamantite ore
 */
-#define VAR_ADAMANTITE_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50485B49";borderColor = "#FF485B49";textAccentColor = "#FF000000";menuTextColor = "#FF485B49";
+#define VAR_ADAMANTITE_ORE_CUSTOMSTYLE textColor = "#FF485B49";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF485B49";
 
 apply (name:"adamantite ore") {
     VAR_ADAMANTITE_ORE_CUSTOMSTYLE 
@@ -6255,7 +6262,7 @@ label: Runite ore custom style
 group: Custom Styling
 exampleItem: Runite ore
 */
-#define VAR_RUNITE_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504D6671";borderColor = "#FF4D6671";textAccentColor = "#FF000000";menuTextColor = "#FF4D6671";
+#define VAR_RUNITE_ORE_CUSTOMSTYLE textColor = "#FF4D6671";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF4D6671";
 
 apply (name:"runite ore") {
     VAR_RUNITE_ORE_CUSTOMSTYLE 
@@ -6267,7 +6274,7 @@ label: Daeyalt ore custom style
 group: Custom Styling
 exampleItem: Daeyalt ore
 */
-#define VAR_DAEYALT_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#500A645B";borderColor = "#FF0A645B";textAccentColor = "#FF000000";menuTextColor = "#FF0A645B";
+#define VAR_DAEYALT_ORE_CUSTOMSTYLE textColor = "#FF0A645B";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF0A645B";
 
 apply (name:"daeyalt ore") {
     VAR_DAEYALT_ORE_CUSTOMSTYLE 
@@ -6279,7 +6286,7 @@ label: Blasted ore custom style
 group: Custom Styling
 exampleItem: Blasted ore
 */
-#define VAR_BLASTED_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50515757";borderColor = "#FF515757";textAccentColor = "#FF000000";menuTextColor = "#FF515757";
+#define VAR_BLASTED_ORE_CUSTOMSTYLE textColor = "#FF515757";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF515757";
 
 apply (name:"blasted ore") {
     VAR_BLASTED_ORE_CUSTOMSTYLE 
@@ -6291,7 +6298,7 @@ label: Blurite ore custom style
 group: Custom Styling
 exampleItem: Blurite ore
 */
-#define VAR_BLURITE_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50787ACF";borderColor = "#FF787ACF";textAccentColor = "#FF000000";menuTextColor = "#FF787ACF";
+#define VAR_BLURITE_ORE_CUSTOMSTYLE textColor = "#FF787ACF";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF787ACF";
 
 apply (name:"blurite ore") {
     VAR_BLURITE_ORE_CUSTOMSTYLE 
@@ -6303,11 +6310,12 @@ label: Lovakite ore custom style
 group: Custom Styling
 exampleItem: Lovakite ore
 */
-#define VAR_LOVAKITE_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#505C1009";borderColor = "#FF5C1009";textAccentColor = "#FF000000";menuTextColor = "#FF5C1009";
+#define VAR_LOVAKITE_ORE_CUSTOMSTYLE textColor = "#FF5C1009";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF5C1009";
 
 apply (name:"lovakite ore") {
     VAR_LOVAKITE_ORE_CUSTOMSTYLE 
 }
+
 
 
 /*@ define:module:gems
@@ -6362,14 +6370,13 @@ enum: [
 */
 #define VAR_GEMS_HIDE []
 
-
 /*@ define:input:gems
 type: style
 label: Sapphire custom style
 group: Custom Styling
 exampleItem: Sapphire
 */
-#define VAR_SAPPHIRE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#500C1273";borderColor = "#FF0C1273";textAccentColor = "#FF000000";menuTextColor = "#FF0C1273";
+#define VAR_SAPPHIRE_CUSTOMSTYLE textColor = "#FF0C1273";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF0C1273";
 
 /*@ define:input:gems
 type: style
@@ -6377,7 +6384,7 @@ label: Emerald custom style
 group: Custom Styling
 exampleItem: Emerald
 */
-#define VAR_EMERALD_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#500C6B0F";borderColor = "#FF0C6B0F";textAccentColor = "#FF000000";menuTextColor = "#FF0C6B0F";
+#define VAR_EMERALD_CUSTOMSTYLE textColor = "#FF0C6B0F";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF0C6B0F";
 
 /*@ define:input:gems
 type: style
@@ -6385,7 +6392,7 @@ label: Ruby custom style
 group: Custom Styling
 exampleItem: Ruby
 */
-#define VAR_RUBY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504E0F08";borderColor = "#FF4E0F08";textAccentColor = "#FF000000";menuTextColor = "#FF4E0F08";
+#define VAR_RUBY_CUSTOMSTYLE textColor = "#FF4E0F08";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF4E0F08";
 
 /*@ define:input:gems
 type: style
@@ -6393,7 +6400,7 @@ label: Diamond custom style
 group: Custom Styling
 exampleItem: Diamond
 */
-#define VAR_DIAMOND_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50857D7D";borderColor = "#FF857D7D";textAccentColor = "#FF000000";menuTextColor = "#FF857D7D";
+#define VAR_DIAMOND_CUSTOMSTYLE textColor = "#FF857D7D";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF857D7D";
 
 /*@ define:input:gems
 type: style
@@ -6401,7 +6408,7 @@ label: Opal custom style
 group: Custom Styling
 exampleItem: Opal
 */
-#define VAR_OPAL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#507E7D63";borderColor = "#FF7E7D63";textAccentColor = "#FF000000";menuTextColor = "#FF7E7D63";
+#define VAR_OPAL_CUSTOMSTYLE textColor = "#FF7E7D63";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF7E7D63";
 
 /*@ define:input:gems
 type: style
@@ -6409,7 +6416,7 @@ label: Jade custom style
 group: Custom Styling
 exampleItem: Jade
 */
-#define VAR_JADE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#506E7E64";borderColor = "#FF6E7E64";textAccentColor = "#FF000000";menuTextColor = "#FF6E7E64";
+#define VAR_JADE_CUSTOMSTYLE textColor = "#FF6E7E64";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF6E7E64";
 
 /*@ define:input:gems
 type: style
@@ -6417,7 +6424,7 @@ label: Red topaz custom style
 group: Custom Styling
 exampleItem: Red topaz
 */
-#define VAR_RED_TOPAZ_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50830E4F";borderColor = "#FF830E4F";textAccentColor = "#FF000000";menuTextColor = "#FF830E4F";
+#define VAR_RED_TOPAZ_CUSTOMSTYLE textColor = "#FF830E4F";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF830E4F";
 
 /*@ define:input:gems
 type: style
@@ -6425,7 +6432,7 @@ label: Dragonstone custom style
 group: Custom Styling
 exampleItem: Dragonstone
 */
-#define VAR_DRAGONSTONE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504C0B62";borderColor = "#FF4C0B62";textAccentColor = "#FF000000";menuTextColor = "#FF4C0B62";
+#define VAR_DRAGONSTONE_CUSTOMSTYLE textColor = "#FF4C0B62";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF4C0B62";
 
 /*@ define:input:gems
 type: style
@@ -6433,7 +6440,7 @@ label: Onyx custom style
 group: Custom Styling
 exampleItem: Onyx
 */
-#define VAR_ONYX_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#501C1A1A";borderColor = "#FF1C1A1A";textAccentColor = "#FF000000";menuTextColor = "#FF1C1A1A";
+#define VAR_ONYX_CUSTOMSTYLE textColor = "#FF1C1A1A";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF1C1A1A";
 
 
 /*@ define:input:gems
@@ -6572,7 +6579,6 @@ apply (name:["Uncut onyx",   "Onyx", ] && quantity:<VAR_ONYX_MIN_QUANTITY) {
 
 
 
-
 /*@ define:module:bars
 ---
 name: Bars
@@ -6612,7 +6618,7 @@ label: Bronze bar custom style
 group: Custom Styling
 exampleItem: Bronze bar
 */
-#define VAR_BRONZE_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50554127";borderColor = "#FF554127";textAccentColor = "#FF000000";menuTextColor = "#FF554127";
+#define VAR_BRONZE_BAR_CUSTOMSTYLE textColor = "#FF554127";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF554127";
 
 /*@ define:input:bars
 type: style
@@ -6620,7 +6626,7 @@ label: Iron bar custom style
 group: Custom Styling
 exampleItem: Iron bar
 */
-#define VAR_IRON_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504C4545";borderColor = "#FF4C4545";textAccentColor = "#FF000000";menuTextColor = "#FF4C4545";
+#define VAR_IRON_BAR_CUSTOMSTYLE textColor = "#FF4C4545";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF4C4545";
 
 /*@ define:input:bars
 type: style
@@ -6628,7 +6634,7 @@ label: Silver bar custom style
 group: Custom Styling
 exampleItem: Silver bar
 */
-#define VAR_SILVER_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#509C9CA7";borderColor = "#FF9C9CA7";textAccentColor = "#FF000000";menuTextColor = "#FF9C9CA7";
+#define VAR_SILVER_BAR_CUSTOMSTYLE textColor = "#FF9C9CA7";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF9C9CA7";
 
 /*@ define:input:bars
 type: style
@@ -6636,7 +6642,7 @@ label: Steel bar custom style
 group: Custom Styling
 exampleItem: Steel bar
 */
-#define VAR_STEEL_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50887E7E";borderColor = "#FF887E7E";textAccentColor = "#FF000000";menuTextColor = "#FF887E7E";
+#define VAR_STEEL_BAR_CUSTOMSTYLE textColor = "#FF887E7E";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF887E7E";
 
 /*@ define:input:bars
 type: style
@@ -6644,7 +6650,7 @@ label: Gold bar custom style
 group: Custom Styling
 exampleItem: Gold bar
 */
-#define VAR_GOLD_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50CBA618";borderColor = "#FFCBA618";textAccentColor = "#FF000000";menuTextColor = "#FFCBA618";
+#define VAR_GOLD_BAR_CUSTOMSTYLE textColor = "#FFCBA618";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFCBA618";
 
 /*@ define:input:bars
 type: style
@@ -6652,7 +6658,7 @@ label: Mithril bar custom style
 group: Custom Styling
 exampleItem: Mithril bar
 */
-#define VAR_MITHRIL_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50484869";borderColor = "#FF484869";textAccentColor = "#FF000000";menuTextColor = "#FF484869";
+#define VAR_MITHRIL_BAR_CUSTOMSTYLE textColor = "#FF484869";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF484869";
 
 /*@ define:input:bars
 type: style
@@ -6660,7 +6666,7 @@ label: Adamantite bar custom style
 group: Custom Styling
 exampleItem: Adamantite bar
 */
-#define VAR_ADAMANTITE_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50485A48";borderColor = "#FF485A48";textAccentColor = "#FF000000";menuTextColor = "#FF485A48";
+#define VAR_ADAMANTITE_BAR_CUSTOMSTYLE textColor = "#FF485A48";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF485A48";
 
 /*@ define:input:bars
 type: style
@@ -6668,7 +6674,7 @@ label: Runite bar custom style
 group: Custom Styling
 exampleItem: Runite bar
 */
-#define VAR_RUNITE_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504B6570";borderColor = "#FF4B6570";textAccentColor = "#FF000000";menuTextColor = "#FF4B6570";
+#define VAR_RUNITE_BAR_CUSTOMSTYLE textColor = "#FF4B6570";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF4B6570";
 
 /*@ define:input:bars
 type: style
@@ -6676,7 +6682,7 @@ label: Elemental metal custom style
 group: Custom Styling
 exampleItem: Elemental metal
 */
-#define VAR_ELEMENTAL_METAL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50691094";borderColor = "#FF691094";textAccentColor = "#FF000000";menuTextColor = "#FF691094";
+#define VAR_ELEMENTAL_METAL_CUSTOMSTYLE textColor = "#FF691094";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF691094";
 
 /*@ define:input:bars
 type: style
@@ -6684,7 +6690,7 @@ label: Primed bar custom style
 group: Custom Styling
 exampleItem: Primed bar
 */
-#define VAR_PRIMED_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#509F9F93";borderColor = "#FF9F9F93";textAccentColor = "#FF000000";menuTextColor = "#FF9F9F93";
+#define VAR_PRIMED_BAR_CUSTOMSTYLE textColor = "#FF9F9F93";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF9F9F93";
 
 /*@ define:input:bars
 type: style
@@ -6692,7 +6698,7 @@ label: Primed mind bar custom style
 group: Custom Styling
 exampleItem: Primed mind bar
 */
-#define VAR_PRIMED_MIND_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#509B6913";borderColor = "#FF9B6913";textAccentColor = "#FF000000";menuTextColor = "#FF9B6913";
+#define VAR_PRIMED_MIND_BAR_CUSTOMSTYLE textColor = "#FF9B6913";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF9B6913";
 
 /*@ define:input:bars
 type: style
@@ -6700,7 +6706,7 @@ label: Blurite bar custom style
 group: Custom Styling
 exampleItem: Blurite bar
 */
-#define VAR_BLURITE_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#508485C8";borderColor = "#FF8485C8";textAccentColor = "#FF000000";menuTextColor = "#FF8485C8";
+#define VAR_BLURITE_BAR_CUSTOMSTYLE textColor = "#FF8485C8";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF8485C8";
 
 /*@ define:input:bars
 type: style
@@ -6708,7 +6714,7 @@ label: Enchanted bar custom style
 group: Custom Styling
 exampleItem: Enchanted bar
 */
-#define VAR_ENCHANTED_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#506F6E4B";borderColor = "#FF6F6E4B";textAccentColor = "#FF000000";menuTextColor = "#FF6F6E4B";
+#define VAR_ENCHANTED_BAR_CUSTOMSTYLE textColor = "#FF6F6E4B";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF6F6E4B";
 
 /*@ define:input:bars
 type: style
@@ -6716,7 +6722,7 @@ label: Lovakite bar custom style
 group: Custom Styling
 exampleItem: Lovakite bar
 */
-#define VAR_LOVAKITE_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#505E1409";borderColor = "#FF5E1409";textAccentColor = "#FF000000";menuTextColor = "#FF5E1409";
+#define VAR_LOVAKITE_BAR_CUSTOMSTYLE textColor = "#FF5E1409";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF5E1409";
 
 /*@ define:input:bars
 type: style
@@ -6724,7 +6730,7 @@ label: "'Perfect' gold bar custom style"
 group: Custom Styling
 exampleItem: "'Perfect' gold bar"
 */
-#define VAR_PERFECT_GOLD_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50B79517";borderColor = "#FFB79517";textAccentColor = "#FF000000";menuTextColor = "#FFB79517";
+#define VAR_PERFECT_GOLD_BAR_CUSTOMSTYLE textColor = "#FFB79517";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFB79517";
 
 
 /*@ define:input:bars
@@ -7105,7 +7111,7 @@ label: Guam leaf custom style
 group: Custom Styling
 exampleItem: Guam leaf
 */
-#define VAR_HERBS_GUAM_LEAF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5009550d";borderColor = "#FF09550d";textAccentColor = "#FF000000";menuTextColor = "#FF09550d";
+#define VAR_HERBS_GUAM_LEAF_CUSTOMSTYLE textColor = "#FF09550d";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF09550d";
 
 /*@ define:input:herbs
 type: style
@@ -7113,7 +7119,7 @@ label: Marrentill custom style
 group: Custom Styling
 exampleItem: Marrentill
 */
-#define VAR_HERBS_MARRENTILL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#500c7610";borderColor = "#FF0c7610";textAccentColor = "#FF000000";menuTextColor = "#FF0c7610";
+#define VAR_HERBS_MARRENTILL_CUSTOMSTYLE textColor = "#FF0c7610";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF0c7610";
 
 /*@ define:input:herbs
 type: style
@@ -7121,7 +7127,7 @@ label: Tarromin custom style
 group: Custom Styling
 exampleItem: Tarromin
 */
-#define VAR_HERBS_TARROMIN_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#500c7138";borderColor = "#FF0c7138";textAccentColor = "#FF000000";menuTextColor = "#FF0c7138";
+#define VAR_HERBS_TARROMIN_CUSTOMSTYLE textColor = "#FF0c7138";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF0c7138";
 
 /*@ define:input:herbs
 type: style
@@ -7129,7 +7135,7 @@ label: Harralander custom style
 group: Custom Styling
 exampleItem: Harralander
 */
-#define VAR_HERBS_HARRALANDER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5054780c";borderColor = "#FF54780c";textAccentColor = "#FF000000";menuTextColor = "#FF54780c";
+#define VAR_HERBS_HARRALANDER_CUSTOMSTYLE textColor = "#FF54780c";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF54780c";
 
 /*@ define:input:herbs
 type: style
@@ -7137,7 +7143,7 @@ label: Ranarr weed custom style
 group: Custom Styling
 exampleItem: Ranarr weed
 */
-#define VAR_HERBS_RANARR_WEED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#503c5f09";borderColor = "#FF3c5f09";textAccentColor = "#FF000000";menuTextColor = "#FF3c5f09";
+#define VAR_HERBS_RANARR_WEED_CUSTOMSTYLE textColor = "#FF3c5f09";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF3c5f09";
 
 /*@ define:input:herbs
 type: style
@@ -7145,7 +7151,7 @@ label: Toadflax custom style
 group: Custom Styling
 exampleItem: Toadflax
 */
-#define VAR_HERBS_TOADFLAX_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50002400";borderColor = "#FF002400";textAccentColor = "#FF000000";menuTextColor = "#FF002400";
+#define VAR_HERBS_TOADFLAX_CUSTOMSTYLE textColor = "#FF002400";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF002400";
 
 /*@ define:input:herbs
 type: style
@@ -7153,7 +7159,7 @@ label: Irit leaf custom style
 group: Custom Styling
 exampleItem: Irit leaf
 */
-#define VAR_HERBS_IRIT_LEAF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50507436";borderColor = "#FF507436";textAccentColor = "#FF000000";menuTextColor = "#FF507436";
+#define VAR_HERBS_IRIT_LEAF_CUSTOMSTYLE textColor = "#FF507436";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF507436";
 
 /*@ define:input:herbs
 type: style
@@ -7161,7 +7167,7 @@ label: Avantoe custom style
 group: Custom Styling
 exampleItem: Avantoe
 */
-#define VAR_HERBS_AVANTOE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50145326";borderColor = "#FF145326";textAccentColor = "#FF000000";menuTextColor = "#FF145326";
+#define VAR_HERBS_AVANTOE_CUSTOMSTYLE textColor = "#FF145326";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF145326";
 
 /*@ define:input:herbs
 type: style
@@ -7169,7 +7175,7 @@ label: Kwuarm custom style
 group: Custom Styling
 exampleItem: Kwuarm
 */
-#define VAR_HERBS_KWUARM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504d5709";borderColor = "#FF4d5709";textAccentColor = "#FF000000";menuTextColor = "#FF4d5709";
+#define VAR_HERBS_KWUARM_CUSTOMSTYLE textColor = "#FF4d5709";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF4d5709";
 
 /*@ define:input:herbs
 type: style
@@ -7177,7 +7183,7 @@ label: Huasca custom style
 group: Custom Styling
 exampleItem: Huasca
 */
-#define VAR_HERBS_HUASCA_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50513748";borderColor = "#FF513748";textAccentColor = "#FF000000";menuTextColor = "#FF513748";
+#define VAR_HERBS_HUASCA_CUSTOMSTYLE textColor = "#FF513748";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF513748";
 
 /*@ define:input:herbs
 type: style
@@ -7185,7 +7191,7 @@ label: Snapdragon custom style
 group: Custom Styling
 exampleItem: Snapdragon
 */
-#define VAR_HERBS_SNAPDRAGON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#503e4b08";borderColor = "#FF3e4b08";textAccentColor = "#FF000000";menuTextColor = "#FF3e4b08";
+#define VAR_HERBS_SNAPDRAGON_CUSTOMSTYLE textColor = "#FF3e4b08";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF3e4b08";
 
 /*@ define:input:herbs
 type: style
@@ -7193,7 +7199,7 @@ label: Cadantine custom style
 group: Custom Styling
 exampleItem: Cadantine
 */
-#define VAR_HERBS_CADANTINE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5044501c";borderColor = "#FF44501c";textAccentColor = "#FF000000";menuTextColor = "#FF44501c";
+#define VAR_HERBS_CADANTINE_CUSTOMSTYLE textColor = "#FF44501c";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF44501c";
 
 /*@ define:input:herbs
 type: style
@@ -7201,7 +7207,7 @@ label: Lantadyme custom style
 group: Custom Styling
 exampleItem: Lantadyme
 */
-#define VAR_HERBS_LANTADYME_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5008473c";borderColor = "#FF08473c";textAccentColor = "#FF000000";menuTextColor = "#FF08473c";
+#define VAR_HERBS_LANTADYME_CUSTOMSTYLE textColor = "#FF08473c";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF08473c";
 
 /*@ define:input:herbs
 type: style
@@ -7209,7 +7215,7 @@ label: Dwarf weed custom style
 group: Custom Styling
 exampleItem: Dwarf weed
 */
-#define VAR_HERBS_DWARF_WEED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50094809";borderColor = "#FF094809";textAccentColor = "#FF000000";menuTextColor = "#FF094809";
+#define VAR_HERBS_DWARF_WEED_CUSTOMSTYLE textColor = "#FF094809";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF094809";
 
 /*@ define:input:herbs
 type: style
@@ -7217,7 +7223,7 @@ label: Torstol custom style
 group: Custom Styling
 exampleItem: Torstol
 */
-#define VAR_HERBS_TORSTOL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5009570c";borderColor = "#FF09570c";textAccentColor = "#FF000000";menuTextColor = "#FF09570c";
+#define VAR_HERBS_TORSTOL_CUSTOMSTYLE textColor = "#FF09570c";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF09570c";
 
 
 /*@ define:input:herbs
@@ -8536,357 +8542,355 @@ enum: [
 */
 #define VAR_POTIONS_SHOW ["Anti-venom(*","Anti-venom+(*","Antidote++(*","Antifire potion(*","Bastion potion(*","Battlemage potion(*","Divine bastion potion(*","Divine battlemage potion(*","Divine magic potion(*","Divine ranging potion(*","Divine super attack potion(*","Divine super combat potion(*","Divine super defence potion(*","Divine super strength potion(*","Extended anti-venom+(*","Extended antifire(*","Extended super antifire(*","Forgotten brew(*","Goading potion(*","Menaphite remedy(*","Prayer regeneration potion(*","Ranging potion(*","Sanfew serum(*","Saradomin brew(*","Stamina potion(*","Super antifire potion(*","Super combat potion(*","Super restore(*"]
 
-
-
 /*@ define:input:potions
 type: style
 label: Attack potion
 exampleItem: Attack potion(4)
 */
-#define VAR_ATTACK_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5032C6CC";borderColor = "#FF32C6CC";textAccentColor = "#FF000000";menuTextColor = "#FF32C6CC";
+#define VAR_ATTACK_POTION_CUSTOMSTYLE textColor = "#FF32C6CC";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF32C6CC";
 
 /*@ define:input:potions
 type: style
 label: Antipoison
 exampleItem: Antipoison(4)
 */
-#define VAR_ANTIPOISON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5081D838";borderColor = "#FF81D838";textAccentColor = "#FF000000";menuTextColor = "#FF81D838";
+#define VAR_ANTIPOISON_CUSTOMSTYLE textColor = "#FF81D838";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF81D838";
 
 /*@ define:input:potions
 type: style
 label: Strength potion
 exampleItem: Strength potion(4)
 */
-#define VAR_STRENGTH_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50C9C754";borderColor = "#FFC9C754";textAccentColor = "#FF000000";menuTextColor = "#FFC9C754";
+#define VAR_STRENGTH_POTION_CUSTOMSTYLE textColor = "#FFC9C754";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFC9C754";
 
 /*@ define:input:potions
 type: style
 label: Serum 207
 exampleItem: Serum 207(4)
 */
-#define VAR_SERUM_207_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5011768B";borderColor = "#FF11768B";textAccentColor = "#FF000000";menuTextColor = "#FF11768B";
+#define VAR_SERUM_207_CUSTOMSTYLE textColor = "#FF11768B";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF11768B";
 
 /*@ define:input:potions
 type: style
 label: Compost potion
 exampleItem: Compost potion(4)
 */
-#define VAR_COMPOST_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#508C655E";borderColor = "#FF8C655E";textAccentColor = "#FF000000";menuTextColor = "#FF8C655E";
+#define VAR_COMPOST_POTION_CUSTOMSTYLE textColor = "#FF8C655E";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF8C655E";
 
 /*@ define:input:potions
 type: style
 label: Restore potion
 exampleItem: Restore potion(4)
 */
-#define VAR_RESTORE_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50D4645D";borderColor = "#FFD4645D";textAccentColor = "#FF000000";menuTextColor = "#FFD4645D";
+#define VAR_RESTORE_POTION_CUSTOMSTYLE textColor = "#FFD4645D";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFD4645D";
 
 /*@ define:input:potions
 type: style
 label: Energy potion
 exampleItem: Energy potion(4)
 */
-#define VAR_ENERGY_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50AA616D";borderColor = "#FFAA616D";textAccentColor = "#FF000000";menuTextColor = "#FFAA616D";
+#define VAR_ENERGY_POTION_CUSTOMSTYLE textColor = "#FFAA616D";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFAA616D";
 
 /*@ define:input:potions
 type: style
 label: Defence potion
 exampleItem: Defence potion(4)
 */
-#define VAR_DEFENCE_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5059D45C";borderColor = "#FF59D45C";textAccentColor = "#FF000000";menuTextColor = "#FF59D45C";
+#define VAR_DEFENCE_POTION_CUSTOMSTYLE textColor = "#FF59D45C";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF59D45C";
 
 /*@ define:input:potions
 type: style
 label: Agility potion
 exampleItem: Agility potion(4)
 */
-#define VAR_AGILITY_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#507E9812";borderColor = "#FF7E9812";textAccentColor = "#FF000000";menuTextColor = "#FF7E9812";
+#define VAR_AGILITY_POTION_CUSTOMSTYLE textColor = "#FF7E9812";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF7E9812";
 
 /*@ define:input:potions
 type: style
 label: Combat potion
 exampleItem: Combat potion(4)
 */
-#define VAR_COMBAT_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#508AB977";borderColor = "#FF8AB977";textAccentColor = "#FF000000";menuTextColor = "#FF8AB977";
+#define VAR_COMBAT_POTION_CUSTOMSTYLE textColor = "#FF8AB977";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF8AB977";
 
 /*@ define:input:potions
 type: style
 label: Prayer potion
 exampleItem: Prayer potion(4)
 */
-#define VAR_PRAYER_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5059D4A8";borderColor = "#FF59D4A8";textAccentColor = "#FF000000";menuTextColor = "#FF59D4A8";
+#define VAR_PRAYER_POTION_CUSTOMSTYLE textColor = "#FF59D4A8";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF59D4A8";
 
 /*@ define:input:potions
 type: style
 label: Super attack
 exampleItem: Super attack(4)
 */
-#define VAR_SUPER_ATTACK_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#505457C9";borderColor = "#FF5457C9";textAccentColor = "#FF000000";menuTextColor = "#FF5457C9";
+#define VAR_SUPER_ATTACK_CUSTOMSTYLE textColor = "#FF5457C9";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF5457C9";
 
 /*@ define:input:potions
 type: style
 label: Superantipoison
 exampleItem: Superantipoison(4)
 */
-#define VAR_SUPERANTIPOISON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50D03177";borderColor = "#FFD03177";textAccentColor = "#FF000000";menuTextColor = "#FFD03177";
+#define VAR_SUPERANTIPOISON_CUSTOMSTYLE textColor = "#FFD03177";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFD03177";
 
 /*@ define:input:potions
 type: style
 label: Fishing potion
 exampleItem: Fishing potion(4)
 */
-#define VAR_FISHING_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50504B4B";borderColor = "#FF504B4B";textAccentColor = "#FF000000";menuTextColor = "#FF504B4B";
+#define VAR_FISHING_POTION_CUSTOMSTYLE textColor = "#FF504B4B";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF504B4B";
 
 /*@ define:input:potions
 type: style
 label: Super energy
 exampleItem: Super energy(4)
 */
-#define VAR_SUPER_ENERGY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50C0619F";borderColor = "#FFC0619F";textAccentColor = "#FF000000";menuTextColor = "#FFC0619F";
+#define VAR_SUPER_ENERGY_CUSTOMSTYLE textColor = "#FFC0619F";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFC0619F";
 
 /*@ define:input:potions
 type: style
 label: Hunter potion
 exampleItem: Hunter potion(4)
 */
-#define VAR_HUNTER_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#500B5E61";borderColor = "#FF0B5E61";textAccentColor = "#FF000000";menuTextColor = "#FF0B5E61";
+#define VAR_HUNTER_POTION_CUSTOMSTYLE textColor = "#FF0B5E61";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF0B5E61";
 
 /*@ define:input:potions
 type: style
 label: Goading potion
 exampleItem: Goading potion(4)
 */
-#define VAR_GOADING_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50AA2315";borderColor = "#FFAA2315";textAccentColor = "#FF000000";menuTextColor = "#FFAA2315";
+#define VAR_GOADING_POTION_CUSTOMSTYLE textColor = "#FFAA2315";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFAA2315";
 
 /*@ define:input:potions
 type: style
 label: Super strength
 exampleItem: Super strength(4)
 */
-#define VAR_SUPER_STRENGTH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50D5D4D4";borderColor = "#FFD5D4D4";textAccentColor = "#FF000000";menuTextColor = "#FFD5D4D4";
+#define VAR_SUPER_STRENGTH_CUSTOMSTYLE textColor = "#FFD5D4D4";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFD5D4D4";
 
 /*@ define:input:potions
 type: style
 label: Prayer regeneration potion
 exampleItem: Prayer regeneration potion(4)
 */
-#define VAR_PRAYER_REGENERATION_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50815248";borderColor = "#FF815248";textAccentColor = "#FF000000";menuTextColor = "#FF815248";
+#define VAR_PRAYER_REGENERATION_POTION_CUSTOMSTYLE textColor = "#FF815248";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF815248";
 
 /*@ define:input:potions
 type: style
 label: Super restore
 exampleItem: Super restore(4)
 */
-#define VAR_SUPER_RESTORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50AE3F6C";borderColor = "#FFAE3F6C";textAccentColor = "#FF000000";menuTextColor = "#FFAE3F6C";
+#define VAR_SUPER_RESTORE_CUSTOMSTYLE textColor = "#FFAE3F6C";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFAE3F6C";
 
 /*@ define:input:potions
 type: style
 label: Sanfew serum
 exampleItem: Sanfew serum(4)
 */
-#define VAR_SANFEW_SERUM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50B97673";borderColor = "#FFB97673";textAccentColor = "#FF000000";menuTextColor = "#FFB97673";
+#define VAR_SANFEW_SERUM_CUSTOMSTYLE textColor = "#FFB97673";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFB97673";
 
 /*@ define:input:potions
 type: style
 label: Super defence
 exampleItem: Super defence(4)
 */
-#define VAR_SUPER_DEFENCE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50D2B45C";borderColor = "#FFD2B45C";textAccentColor = "#FF000000";menuTextColor = "#FFD2B45C";
+#define VAR_SUPER_DEFENCE_CUSTOMSTYLE textColor = "#FFD2B45C";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFD2B45C";
 
 /*@ define:input:potions
 type: style
 label: Antidote+
 exampleItem: Antidote+(4)
 */
-#define VAR_ANTIDOTE_PLUS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#507E7E64";borderColor = "#FF7E7E64";textAccentColor = "#FF000000";menuTextColor = "#FF7E7E64";
+#define VAR_ANTIDOTE_PLUS_CUSTOMSTYLE textColor = "#FF7E7E64";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF7E7E64";
 
 /*@ define:input:potions
 type: style
 label: Antifire potion
 exampleItem: Antifire potion(4)
 */
-#define VAR_ANTIFIRE_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5078129B";borderColor = "#FF78129B";textAccentColor = "#FF000000";menuTextColor = "#FF78129B";
+#define VAR_ANTIFIRE_POTION_CUSTOMSTYLE textColor = "#FF78129B";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF78129B";
 
 /*@ define:input:potions
 type: style
 label: Divine super attack potion
 exampleItem: Divine super attack potion(4)
 */
-#define VAR_DIVINE_SUPER_ATTACK_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#506365CD";borderColor = "#FFADC8C2";textAccentColor = "#FF000000";menuTextColor = "#FF6365CD";
+#define VAR_DIVINE_SUPER_ATTACK_POTION_CUSTOMSTYLE textColor = "#FFADC8C2";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF6365CD";
 
 /*@ define:input:potions
 type: style
 label: Divine super defence potion
 exampleItem: Divine super defence potion(4)
 */
-#define VAR_DIVINE_SUPER_DEFENCE_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50CDB365";borderColor = "#FFCDB365";textAccentColor = "#FF000000";menuTextColor = "#FFCDB365";
+#define VAR_DIVINE_SUPER_DEFENCE_POTION_CUSTOMSTYLE textColor = "#FFCDB365";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFCDB365";
 
 /*@ define:input:potions
 type: style
 label: Divine super strength potion
 exampleItem: Divine super strength potion(4)
 */
-#define VAR_DIVINE_SUPER_STRENGTH_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50CECDCD";borderColor = "#FFADC8C2";textAccentColor = "#FF000000";menuTextColor = "#FFCECDCD";
+#define VAR_DIVINE_SUPER_STRENGTH_POTION_CUSTOMSTYLE textColor = "#FFADC8C2";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFCECDCD";
 
 /*@ define:input:potions
 type: style
 label: Ranging potion
 exampleItem: Ranging potion(4)
 */
-#define VAR_RANGING_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5052A8C9";borderColor = "#FF52A8C9";textAccentColor = "#FF000000";menuTextColor = "#FF52A8C9";
+#define VAR_RANGING_POTION_CUSTOMSTYLE textColor = "#FF52A8C9";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF52A8C9";
 
 /*@ define:input:potions
 type: style
 label: Divine ranging potion
 exampleItem: Divine ranging potion(4)
 */
-#define VAR_DIVINE_RANGING_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5068B5D3";borderColor = "#FFADC8C2";textAccentColor = "#FF000000";menuTextColor = "#FF68B5D3";
+#define VAR_DIVINE_RANGING_POTION_CUSTOMSTYLE textColor = "#FFADC8C2";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF68B5D3";
 
 /*@ define:input:potions
 type: style
 label: Magic potion
 exampleItem: Magic potion(4)
 */
-#define VAR_MAGIC_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50C8ACA3";borderColor = "#FFC8ACA3";textAccentColor = "#FF000000";menuTextColor = "#FFC8ACA3";
+#define VAR_MAGIC_POTION_CUSTOMSTYLE textColor = "#FFC8ACA3";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFC8ACA3";
 
 /*@ define:input:potions
 type: style
 label: Stamina potion
 exampleItem: Stamina potion(4)
 */
-#define VAR_STAMINA_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50977546";borderColor = "#FF977546";textAccentColor = "#FF000000";menuTextColor = "#FF977546";
+#define VAR_STAMINA_POTION_CUSTOMSTYLE textColor = "#FF977546";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF977546";
 
 /*@ define:input:potions
 type: style
 label: Zamorak brew
 exampleItem: Zamorak brew(4)
 */
-#define VAR_ZAMORAK_BREW_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50C59418";borderColor = "#FFC59418";textAccentColor = "#FF000000";menuTextColor = "#FFC59418";
+#define VAR_ZAMORAK_BREW_CUSTOMSTYLE textColor = "#FFC59418";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFC59418";
 
 /*@ define:input:potions
 type: style
 label: Divine magic potion
 exampleItem: Divine magic potion(4)
 */
-#define VAR_DIVINE_MAGIC_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50C6B1AA";borderColor = "#FFADC8C2";textAccentColor = "#FF000000";menuTextColor = "#FFC6B1AA";
+#define VAR_DIVINE_MAGIC_POTION_CUSTOMSTYLE textColor = "#FFADC8C2";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFC6B1AA";
 
 /*@ define:input:potions
 type: style
 label: Antidote++
 exampleItem: Antidote++(4)
 */
-#define VAR_ANTIDOTE_PLUS_PLUS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#507A7E3A";borderColor = "#FF7A7E3A";textAccentColor = "#FF000000";menuTextColor = "#FF7A7E3A";
+#define VAR_ANTIDOTE_PLUS_PLUS_CUSTOMSTYLE textColor = "#FF7A7E3A";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF7A7E3A";
 
 /*@ define:input:potions
 type: style
 label: Bastion potion
 exampleItem: Bastion potion(4)
 */
-#define VAR_BASTION_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50BB6216";borderColor = "#FFBB6216";textAccentColor = "#FF000000";menuTextColor = "#FFBB6216";
+#define VAR_BASTION_POTION_CUSTOMSTYLE textColor = "#FFBB6216";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFBB6216";
 
 /*@ define:input:potions
 type: style
 label: Battlemage potion
 exampleItem: Battlemage potion(4)
 */
-#define VAR_BATTLEMAGE_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50D8A942";borderColor = "#FFD8A942";textAccentColor = "#FF000000";menuTextColor = "#FFD8A942";
+#define VAR_BATTLEMAGE_POTION_CUSTOMSTYLE textColor = "#FFD8A942";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFD8A942";
 
 /*@ define:input:potions
 type: style
 label: Saradomin brew
 exampleItem: Saradomin brew(4)
 */
-#define VAR_SARADOMIN_BREW_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50CAC962";borderColor = "#FFCAC962";textAccentColor = "#FF000000";menuTextColor = "#FFCAC962";
+#define VAR_SARADOMIN_BREW_CUSTOMSTYLE textColor = "#FFCAC962";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFCAC962";
 
 /*@ define:input:potions
 type: style
 label: Extended antifire
 exampleItem: Extended antifire(4)
 */
-#define VAR_EXTENDED_ANTIFIRE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#506E3EC6";borderColor = "#FF6E3EC6";textAccentColor = "#FF000000";menuTextColor = "#FF6E3EC6";
+#define VAR_EXTENDED_ANTIFIRE_CUSTOMSTYLE textColor = "#FF6E3EC6";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF6E3EC6";
 
 /*@ define:input:potions
 type: style
 label: Ancient brew
 exampleItem: Ancient brew(4)
 */
-#define VAR_ANCIENT_BREW_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#509451C0";borderColor = "#FF9451C0";textAccentColor = "#FF000000";menuTextColor = "#FF9451C0";
+#define VAR_ANCIENT_BREW_CUSTOMSTYLE textColor = "#FF9451C0";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF9451C0";
 
 /*@ define:input:potions
 type: style
 label: Divine bastion potion
 exampleItem: Divine bastion potion(4)
 */
-#define VAR_DIVINE_BASTION_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50BB6216";borderColor = "#FFADC8C2";textAccentColor = "#FF000000";menuTextColor = "#FFBB6216";
+#define VAR_DIVINE_BASTION_POTION_CUSTOMSTYLE textColor = "#FFADC8C2";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFBB6216";
 
 /*@ define:input:potions
 type: style
 label: Divine battlemage potion
 exampleItem: Divine battlemage potion(4)
 */
-#define VAR_DIVINE_BATTLEMAGE_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50D8A83E";borderColor = "#FFADC8C2";textAccentColor = "#FF000000";menuTextColor = "#FFD8A83E";
+#define VAR_DIVINE_BATTLEMAGE_POTION_CUSTOMSTYLE textColor = "#FFADC8C2";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFD8A83E";
 
 /*@ define:input:potions
 type: style
 label: Anti-venom
 exampleItem: Anti-venom(4)
 */
-#define VAR_ANTI_VENOM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#503A4A42";borderColor = "#FF3A4A42";textAccentColor = "#FF000000";menuTextColor = "#FF3A4A42";
+#define VAR_ANTI_VENOM_CUSTOMSTYLE textColor = "#FF3A4A42";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF3A4A42";
 
 /*@ define:input:potions
 type: style
 label: Menaphite remedy
 exampleItem: Menaphite remedy(4)
 */
-#define VAR_MENAPHITE_REMEDY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#501F7BD0";borderColor = "#FF1F7BD0";textAccentColor = "#FF000000";menuTextColor = "#FF1F7BD0";
+#define VAR_MENAPHITE_REMEDY_CUSTOMSTYLE textColor = "#FF1F7BD0";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF1F7BD0";
 
 /*@ define:input:potions
 type: style
 label: Super combat potion
 exampleItem: Super combat potion(4)
 */
-#define VAR_SUPER_COMBAT_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5019640B";borderColor = "#FF19640B";textAccentColor = "#FF000000";menuTextColor = "#FF19640B";
+#define VAR_SUPER_COMBAT_POTION_CUSTOMSTYLE textColor = "#FF19640B";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF19640B";
 
 /*@ define:input:potions
 type: style
 label: Forgotten brew
 exampleItem: Forgotten brew(4)
 */
-#define VAR_FORGOTTEN_BREW_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50594568";borderColor = "#FF594568";textAccentColor = "#FF000000";menuTextColor = "#FF594568";
+#define VAR_FORGOTTEN_BREW_CUSTOMSTYLE textColor = "#FF594568";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF594568";
 
 /*@ define:input:potions
 type: style
 label: Super antifire potion
 exampleItem: Super antifire potion(4)
 */
-#define VAR_SUPER_ANTIFIRE_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#508D61AC";borderColor = "#FF8D61AC";textAccentColor = "#FF000000";menuTextColor = "#FF8D61AC";
+#define VAR_SUPER_ANTIFIRE_POTION_CUSTOMSTYLE textColor = "#FF8D61AC";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF8D61AC";
 
 /*@ define:input:potions
 type: style
 label: Anti-venom+
 exampleItem: Anti-venom+(4)
 */
-#define VAR_ANTI_VENOM_PLUS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#505C494F";borderColor = "#FF5C494F";textAccentColor = "#FF000000";menuTextColor = "#FF5C494F";
+#define VAR_ANTI_VENOM_PLUS_CUSTOMSTYLE textColor = "#FF5C494F";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF5C494F";
 
 /*@ define:input:potions
 type: style
 label: Extended anti-venom+
 exampleItem: Extended anti-venom+(4)
 */
-#define VAR_EXTENDED_ANTI_VENOM_PLUS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5066967B";borderColor = "#FF66967B";textAccentColor = "#FF000000";menuTextColor = "#FF66967B";
+#define VAR_EXTENDED_ANTI_VENOM_PLUS_CUSTOMSTYLE textColor = "#FF66967B";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF66967B";
 
 /*@ define:input:potions
 type: style
 label: Divine super combat potion
 exampleItem: Divine super combat potion(4)
 */
-#define VAR_DIVINE_SUPER_COMBAT_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#501C700B";borderColor = "#FFADC8C2";textAccentColor = "#FF000000";menuTextColor = "#FF1C700B";
+#define VAR_DIVINE_SUPER_COMBAT_POTION_CUSTOMSTYLE textColor = "#FFADC8C2";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF1C700B";
 
 /*@ define:input:potions
 type: style
 label: Extended super antifire
 exampleItem: Extended super antifire(4)
 */
-#define VAR_EXTENDED_SUPER_ANTIFIRE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50B393CB";borderColor = "#FFB393CB";textAccentColor = "#FF000000";menuTextColor = "#FFB393CB";
+#define VAR_EXTENDED_SUPER_ANTIFIRE_CUSTOMSTYLE textColor = "#FFB393CB";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFB393CB";
 
 
 
@@ -9344,7 +9348,7 @@ label: Karambwan custom style
 group: Food style
 exampleItem: Karambwan
 */
-#define VAR_KARAMBWAN_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_KARAMBWAN_CUSTOMSTYLE textColor = "#FFdad9d4";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -9352,7 +9356,7 @@ label: Shark custom style
 group: Food style
 exampleItem: Shark
 */
-#define VAR_SHARK_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50b7977c";borderColor = "#FFb7977c";textAccentColor = "#FF000000";menuTextColor = "#FFb7977c";
+#define VAR_SHARK_CUSTOMSTYLE textColor = "#FFb7977c";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFb7977c";
 
 /*@ define:input:food
 type: style
@@ -9360,7 +9364,7 @@ label: Sea turtle custom style
 group: Food style
 exampleItem: Sea turtle
 */
-#define VAR_SEA_TURTLE_CUSTOMSTYLE 
+#define VAR_SEA_TURTLE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF000000";  // Placeholder since no color was provided
 
 /*@ define:input:food
 type: style
@@ -9368,7 +9372,7 @@ label: Manta ray custom style
 group: Food style
 exampleItem: Manta ray
 */
-#define VAR_MANTA_RAY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5069503a";borderColor = "#FF69503a";textAccentColor = "#FF000000";menuTextColor = "#FFffc38d";
+#define VAR_MANTA_RAY_CUSTOMSTYLE textColor = "#FF69503a";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFffc38d";
 
 /*@ define:input:food
 type: style
@@ -9376,7 +9380,7 @@ label: Anglerfish custom style
 group: Food style
 exampleItem: Anglerfish
 */
-#define VAR_ANGLERFISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50624b18";borderColor = "#FF624b18";textAccentColor = "#FF000000";menuTextColor = "#FFffd480";
+#define VAR_ANGLERFISH_CUSTOMSTYLE textColor = "#FF624b18";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFffd480";
 
 /*@ define:input:food
 type: style
@@ -9384,7 +9388,7 @@ label: Dark crab custom style
 group: Food style
 exampleItem: Dark crab
 */
-#define VAR_DARK_CRAB_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504a5e4b";borderColor = "#FF4a5e4b";textAccentColor = "#FF000000";menuTextColor = "#FF9aff90";
+#define VAR_DARK_CRAB_CUSTOMSTYLE textColor = "#FF4a5e4b";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF9aff90";
 
 apply (name:VAR_FOOD_HUNTER_FOODS_HIDE) {
     hidden = true;
@@ -9512,21 +9516,21 @@ type: style
 label: Bronze
 exampleItem: Bronze platelegs
 */
-#define VAR_BRONZE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#8043341d";borderColor = "#FF43341d";textAccentColor = "#FF000000";menuTextColor = "#FF43341d";
+#define VAR_BRONZE_CUSTOMSTYLE textColor = "#FF43341d";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF43341d";
 
 /*@ define:input:metal_equipment
 type: style
 label: Bronze (t)
 exampleItem: Bronze platelegs (t)
 */
-#define VAR_BRONZE_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#8043341d";borderColor = "#FF615c2d";textAccentColor = "#FF000000";menuTextColor = "#FF43341d";
+#define VAR_BRONZE_TRIMMED_CUSTOMSTYLE textColor = "#FF615c2d";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF43341d";
 
 /*@ define:input:metal_equipment
 type: style
 label: Bronze (g)
 exampleItem: Bronze platelegs (g)
 */
-#define VAR_BRONZE_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#8043341d";borderColor = "#FFdea71a";textAccentColor = "#FF000000";menuTextColor = "#FF43341d";
+#define VAR_BRONZE_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFdea71a";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF43341d";
 
 
 /*@ define:input:metal_equipment
@@ -9534,21 +9538,21 @@ type: style
 label: Iron
 exampleItem: Iron platelegs
 */
-#define VAR_IRON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#804f4948";borderColor = "#FF4f4948";textAccentColor = "#FF000000";menuTextColor = "#FF4f4948";
+#define VAR_IRON_CUSTOMSTYLE textColor = "#FF4f4948";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF4f4948";
 
 /*@ define:input:metal_equipment
 type: style
 label: Iron (t)
 exampleItem: Iron platelegs (t)
 */
-#define VAR_IRON_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#804f4948";borderColor = "#FF151111";textAccentColor = "#FF000000";menuTextColor = "#FF4f4948";
+#define VAR_IRON_TRIMMED_CUSTOMSTYLE textColor = "#FF151111";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF4f4948";
 
 /*@ define:input:metal_equipment
 type: style
 label: Iron (g)
 exampleItem: Iron platelegs (g)
 */
-#define VAR_IRON_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#804f4948";borderColor = "#FFdea71a";textAccentColor = "#FF000000";menuTextColor = "#FF4f4948";
+#define VAR_IRON_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFdea71a";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF4f4948";
 
 
 /*@ define:input:metal_equipment
@@ -9556,21 +9560,21 @@ type: style
 label: Steel
 exampleItem: Steel platelegs
 */
-#define VAR_STEEL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80857c7b";borderColor = "#FF857c7b";textAccentColor = "#FF000000";menuTextColor = "#FF857c7b";
+#define VAR_STEEL_CUSTOMSTYLE textColor = "#FF857c7b";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF857c7b";
 
 /*@ define:input:metal_equipment
 type: style
 label: Steel (t)
 exampleItem: Steel platelegs (t)
 */
-#define VAR_STEEL_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80857c7b";borderColor = "#FFb1a6a6";textAccentColor = "#FF000000";menuTextColor = "#FF857c7b";
+#define VAR_STEEL_TRIMMED_CUSTOMSTYLE textColor = "#FFb1a6a6";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF857c7b";
 
 /*@ define:input:metal_equipment
 type: style
 label: Steel (g)
 exampleItem: Steel platelegs (g)
 */
-#define VAR_STEEL_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80857c7b";borderColor = "#FFdea71a";textAccentColor = "#FF000000";menuTextColor = "#FF857c7b";
+#define VAR_STEEL_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFdea71a";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF857c7b";
 
 
 /*@ define:input:metal_equipment
@@ -9578,28 +9582,28 @@ type: style
 label: Black
 exampleItem: Black platelegs
 */
-#define VAR_BLACK_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#801d1b1b";borderColor = "#FF1d1b1b";textAccentColor = "#FF000000";menuTextColor = "#FF1d1b1b";
+#define VAR_BLACK_CUSTOMSTYLE textColor = "#FF1d1b1b";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF1d1b1b";
 
 /*@ define:input:metal_equipment
 type: style
 label: Black (t)
 exampleItem: Black platelegs (t)
 */
-#define VAR_BLACK_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#801d1b1b";borderColor = "#FF423e3e";textAccentColor = "#FF000000";menuTextColor = "#FF1d1b1b";
+#define VAR_BLACK_TRIMMED_CUSTOMSTYLE textColor = "#FF423e3e";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF1d1b1b";
 
 /*@ define:input:metal_equipment
 type: style
 label: Black (g)
 exampleItem: Black platelegs (g)
 */
-#define VAR_BLACK_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#801d1b1b";borderColor = "#FFdea71a";textAccentColor = "#FF000000";menuTextColor = "#FF1d1b1b";
+#define VAR_BLACK_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFdea71a";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF1d1b1b";
 
 /*@ define:input:metal_equipment
 type: style
 label: Black heraldic
 exampleItem: Black helm (h1)
 */
-#define VAR_BLACK_HERALDIC_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#801d1b1b";borderColor = "#FF1d1b1b";textAccentColor = "#FF000000";menuTextColor = "#FF1d1b1b";
+#define VAR_BLACK_HERALDIC_CUSTOMSTYLE textColor = "#FF1d1b1b";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF1d1b1b";
 
 
 /*@ define:input:metal_equipment
@@ -9607,21 +9611,21 @@ type: style
 label: Mithril
 exampleItem: Mithril platelegs
 */
-#define VAR_MITHRIL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80414161";borderColor = "#FF414161";textAccentColor = "#FF000000";menuTextColor = "#FF414161";
+#define VAR_MITHRIL_CUSTOMSTYLE textColor = "#FF414161";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF414161";
 
 /*@ define:input:metal_equipment
 type: style
 label: Mithril (t)
 exampleItem: Mithril platelegs (t)
 */
-#define VAR_MITHRIL_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80414161";borderColor = "#FF6e8aa3";textAccentColor = "#FF000000";menuTextColor = "#FF414161";
+#define VAR_MITHRIL_TRIMMED_CUSTOMSTYLE textColor = "#FF6e8aa3";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF414161";
 
 /*@ define:input:metal_equipment
 type: style
 label: Mithril (g)
 exampleItem: Mithril platelegs (g)
 */
-#define VAR_MITHRIL_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80414161";borderColor = "#FFdea71a";textAccentColor = "#FF000000";menuTextColor = "#FF414161";
+#define VAR_MITHRIL_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFdea71a";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF414161";
 
 
 /*@ define:input:metal_equipment
@@ -9629,28 +9633,28 @@ type: style
 label: Adamant
 exampleItem: Adamant platelegs
 */
-#define VAR_ADAMANT_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80405140";borderColor = "#FF405140";textAccentColor = "#FF000000";menuTextColor = "#FF405140";
+#define VAR_ADAMANT_CUSTOMSTYLE textColor = "#FF405140";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF405140";
 
 /*@ define:input:metal_equipment
 type: style
 label: Adamant (t)
 exampleItem: Adamant platelegs (t)
 */
-#define VAR_ADAMANT_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80405140";borderColor = "#FF6a725a";textAccentColor = "#FF000000";menuTextColor = "#FF405140";
+#define VAR_ADAMANT_TRIMMED_CUSTOMSTYLE textColor = "#FF6a725a";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF405140";
 
 /*@ define:input:metal_equipment
 type: style
 label: Adamant (g)
 exampleItem: Adamant platelegs (g)
 */
-#define VAR_ADAMANT_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80405140";borderColor = "#FFdea71a";textAccentColor = "#FF000000";menuTextColor = "#FF405140";
+#define VAR_ADAMANT_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFdea71a";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF405140";
 
 /*@ define:input:metal_equipment
 type: style
 label: Adamant heraldic
 exampleItem: Adamant helm (h1)
 */
-#define VAR_ADAMANT_HERALDIC_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80405140";borderColor = "#FF405140";textAccentColor = "#FF000000";menuTextColor = "#FF405140";
+#define VAR_ADAMANT_HERALDIC_CUSTOMSTYLE textColor = "#FF405140";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF405140";
 
 
 /*@ define:input:metal_equipment
@@ -9658,77 +9662,77 @@ type: style
 label: Rune
 exampleItem: Rune platelegs
 */
-#define VAR_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF415760";textAccentColor = "#FF000000";menuTextColor = "#FF415760";
+#define VAR_RUNE_CUSTOMSTYLE textColor = "#FF415760";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF415760";
 
 /*@ define:input:metal_equipment
 type: style
 label: Rune (t)
 exampleItem: Rune platelegs (t)
 */
-#define VAR_RUNE_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF6d88a1";textAccentColor = "#FF000000";menuTextColor = "#FF415760";
+#define VAR_RUNE_TRIMMED_CUSTOMSTYLE textColor = "#FF6d88a1";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF415760";
 
 /*@ define:input:metal_equipment
 type: style
 label: Rune (g)
 exampleItem: Rune platelegs (g)
 */
-#define VAR_RUNE_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FFdea71a";textAccentColor = "#FF000000";menuTextColor = "#FF415760";
+#define VAR_RUNE_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFdea71a";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF415760";
 
 /*@ define:input:metal_equipment
 type: style
 label: Rune heraldic
 exampleItem: Rune helm (h1)
 */
-#define VAR_RUNE_HERALDIC_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF415760";textAccentColor = "#FF000000";menuTextColor = "#FF415760";
+#define VAR_RUNE_HERALDIC_CUSTOMSTYLE textColor = "#FF415760";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF415760";
 
 /*@ define:input:metal_equipment
 type: style
 label: Gilded
 exampleItem: Gilded platelegs
 */
-#define VAR_RUNE_GILDED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80c39318";borderColor = "#FF7c540c";textAccentColor = "#FF000000";menuTextColor = "#FF7c540c";
+#define VAR_RUNE_GILDED_CUSTOMSTYLE textColor = "#FF7c540c";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF7c540c";
 
 /*@ define:input:metal_equipment
 type: style
 label: Rune ancient
 exampleItem: Ancient platelegs
 */
-#define VAR_RUNE_ANCIENT_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF552f53";textAccentColor = "#FF000000";menuTextColor = "#FF552f53";
+#define VAR_RUNE_ANCIENT_CUSTOMSTYLE textColor = "#FF552f53";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF552f53";
 
 /*@ define:input:metal_equipment
 type: style
 label: Rune armadyl
 exampleItem: Armadyl platelegs
 */
-#define VAR_RUNE_ARMADYL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF706868";textAccentColor = "#FF000000";menuTextColor = "#FF706868";
+#define VAR_RUNE_ARMADYL_CUSTOMSTYLE textColor = "#FF706868";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF706868";
 
 /*@ define:input:metal_equipment
 type: style
 label: Rune bandos
 exampleItem: Bandos platelegs
 */
-#define VAR_RUNE_BANDOS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF746228";textAccentColor = "#FF000000";menuTextColor = "#FF746228";
+#define VAR_RUNE_BANDOS_CUSTOMSTYLE textColor = "#FF746228";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF746228";
 
 /*@ define:input:metal_equipment
 type: style
 label: Rune guthix
 exampleItem: Guthix platelegs
 */
-#define VAR_RUNE_GUTHIX_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF437745";textAccentColor = "#FF000000";menuTextColor = "#FF437745";
+#define VAR_RUNE_GUTHIX_CUSTOMSTYLE textColor = "#FF437745";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF437745";
 
 /*@ define:input:metal_equipment
 type: style
 label: Rune saradomin
 exampleItem: Saradomin platelegs
 */
-#define VAR_RUNE_SARADOMIN_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FFacab88";textAccentColor = "#FF000000";menuTextColor = "#FFacab88";
+#define VAR_RUNE_SARADOMIN_CUSTOMSTYLE textColor = "#FFacab88";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FFacab88";
 
 /*@ define:input:metal_equipment
 type: style
 label: Rune zamorak
 exampleItem: Zamorak platelegs
 */
-#define VAR_RUNE_ZAMORAK_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF801a0d";textAccentColor = "#FF000000";menuTextColor = "#FF801a0d";
+#define VAR_RUNE_ZAMORAK_CUSTOMSTYLE textColor = "#FF801a0d";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF801a0d";
 
 
 /*@ define:input:metal_equipment
@@ -9736,7 +9740,7 @@ type: style
 label: Dragon
 exampleItem: Dragon platelegs
 */
-#define VAR_DRAGON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80541109";borderColor = "#FF541109";textAccentColor = "#FF000000";menuTextColor = "#FF541109";
+#define VAR_DRAGON_CUSTOMSTYLE textColor = "#FF541109";backgroundColor = "#00000000";borderColor = "#00000000";textAccentColor = "#FF000000";menuTextColor = "#FF541109";
 
 
 #define CONST_BRONZE_ONE_HANDED_MELEE_WEAPONS [   "Bronze dagger",   "Bronze axe",   "Bronze mace",   "Bronze sword",   "Bronze pickaxe",   "Bronze scimitar",   "Bronze hasta",   "Bronze longsword",   "Bronze warhammer",   "Bronze battleaxe", ]
